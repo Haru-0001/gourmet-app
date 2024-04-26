@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Noto_Sans_JP } from 'next/font/google'
+import Header from "@/components/header/header";
 
 const nsJpFont = Noto_Sans_JP({
-  subsets: ["latin"],
+  preload: false,
   variable: "--font-noto-sans-jp",
-  display: "swap",
 });
 
 
