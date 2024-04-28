@@ -1,4 +1,4 @@
-export interface Restaurant{
+export type LiteRestaurant = {
     "api_version": string,
     "results_available": number,
     "results_returned": string,

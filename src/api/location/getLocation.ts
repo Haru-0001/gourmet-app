@@ -1,6 +1,8 @@
 //位置情報を取得
 
-export default async function getLocation(): Promise<{ latitude: number, longitude: number }> {
+import { Coordinate } from "@/types/coordinate"
+
+export default async function getLocation(): Promise<{ params : Coordinate }> {
     const options :PositionOptions= {
         maximumAge: 0,
         timeout: 10000,
@@ -10,7 +12,7 @@ export default async function getLocation(): Promise<{ latitude: number, longitu
     const success: PositionCallback = (position) => {
         const latitude = position.coords.latitude
         const longitude = position.coords.longitude
-        resolve({ latitude, longitude })
+        resolve({ params: { latitude, longitude } })
     }
 
     const error: PositionErrorCallback = (error): void => {
