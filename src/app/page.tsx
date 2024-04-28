@@ -1,10 +1,11 @@
-import FirstButton from "@/components/elements/FirstButton"
+import FirstButton from "@/components/elements/buttons/FirstButton";
+import Link from "next/link"
 
 export default function Home() {
-
   return (
     <main>
-      <FirstButton />
+      <Link href="./result"><FirstButton /></Link>
+
     </main>
   );
 }

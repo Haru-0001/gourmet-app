@@ -1,0 +1,270 @@
+{
+    "results": {
+        "api_version": "1.30",
+        "results_available": 167,
+        "results_returned": "10",
+        "results_start": 1,
+        "shop": [
+            {
+                "id": "J001037286",
+                "name": "駒形前川 東京スカイツリーソラマチ店",
+                "address": "東京都墨田区押上１－１－２　スカイツリータウン・ソラマチ７Ｆ",
+                "lat": 35.7100342098,
+                "lng": 139.8107013042,
+                "genre": {
+                    "name": "和食",
+                    "catch": "200年愛され続ける老舗の鰻"
+                },
+                "catch": "【創業２００年】 【ソラマチ】",
+                "access": "押上駅より徒歩1分　　東京スカイツリーソラマチ７Ｆ",
+                "urls": {
+                    "pc": "https://www.hotpepper.jp/strJ001037286/?vos=nhppalsa000016"
+                },
+                "photo": {
+                    "pc": {
+                        "l": "https://imgfp.hotp.jp/IMGH/06/00/P022150600/P022150600_238.jpg",
+                        "m": "https://imgfp.hotp.jp/IMGH/06/00/P022150600/P022150600_168.jpg",
+                        "s": "https://imgfp.hotp.jp/IMGH/06/00/P022150600/P022150600_58_s.jpg"
+                    }
+                },
+                "other_memo": "中国語メニューあり",
+                "shop_detail_memo": "ご不明点・ご相談等、お気軽に店舗へご相談下さい。",
+                "budget_memo": ""
+            },
+            {
+                "id": "J001226181",
+                "name": "東京スカイツリータウン(R)の庭 空とグランピングとBBQ",
+                "address": "東京都墨田区押上１丁目1-2東京スカイツリータウン・ソラマチ5階",
+                "lat": 35.7101142005,
+                "lng": 139.8106871355,
+                "genre": {
+                    "name": "カラオケ・パーティ",
+                    "catch": "手ぶらでBBQ&グランピング♪"
+                },
+                "catch": "お手軽バーベキュー♪ 最大50名様までご利用可能",
+                "access": "押上・スカイツリー駅より直結",
+                "urls": {
+                    "pc": "https://www.hotpepper.jp/strJ001226181/?vos=nhppalsa000016"
+                },
+                "photo": {
+                    "pc": {
+                        "l": "https://imgfp.hotp.jp/IMGH/56/20/P033815620/P033815620_238.jpg",
+                        "m": "https://imgfp.hotp.jp/IMGH/56/20/P033815620/P033815620_168.jpg",
+                        "s": "https://imgfp.hotp.jp/IMGH/56/20/P033815620/P033815620_58_s.jpg"
+                    }
+                },
+                "other_memo": "ご利用料金に機材・消耗品・調味料等含まれております。",
+                "shop_detail_memo": "未成年の方のみのご利用はお断りさせていただいております。",
+                "budget_memo": "領収証の発行は現地スタッフにお申し付けください。"
+            },
+            {
+                "id": "J001044354",
+                "name": "叙々苑 東京スカイツリータウン・ソラマチ店",
+                "address": "東京都墨田区押上１-１-２ 東京スカイツリータウン ソラマチ３０F",
+                "lat": 35.7100344879,
+                "lng": 139.8107138031,
+                "genre": {
+                    "name": "焼肉・ホルモン",
+                    "catch": "焼肉"
+                },
+                "catch": "",
+                "access": "-",
+                "urls": {
+                    "pc": "https://www.hotpepper.jp/strJ001044354/?vos=nhppalsa000016"
+                },
+                "photo": {
+                    "pc": {
+                        "l": "https://imgfp.hotp.jp/IMGH/63/49/P030726349/P030726349_238.jpg",
+                        "m": "https://imgfp.hotp.jp/IMGH/63/49/P030726349/P030726349_168.jpg",
+                        "s": "https://imgfp.hotp.jp/IMGH/63/49/P030726349/P030726349_58_s.jpg"
+                    }
+                },
+                "other_memo": "",
+                "shop_detail_memo": "",
+                "budget_memo": ""
+            },
+            {
+                "id": "J001018342",
+                "name": "ひつまぶし 名古屋 備長 東京スカイツリータウン ソラマチ店",
+                "address": "東京都墨田区押上１-1-2 東京スカイツリータウン　ソラマチ6F",
+                "lat": 35.7099150583,
+                "lng": 139.8107665812,
+                "genre": {
+                    "name": "和食",
+                    "catch": "スカイツリーソラマチ6F　ひつまぶし専門店"
+                },
+                "catch": "東京スカイツリーソラマチ 名店の【鰻・ひつまぶし】",
+                "access": "都営浅草線・半蔵門線・京成線・東武線押上駅 直結・B3出口徒歩1分／東武線とうきょうスカイツリー駅正面口 徒歩5分",
+                "urls": {
+                    "pc": "https://www.hotpepper.jp/strJ001018342/?vos=nhppalsa000016"
+                },
+                "photo": {
+                    "pc": {
+                        "l": "https://imgfp.hotp.jp/IMGH/91/11/P032049111/P032049111_238.jpg",
+                        "m": "https://imgfp.hotp.jp/IMGH/91/11/P032049111/P032049111_168.jpg",
+                        "s": "https://imgfp.hotp.jp/IMGH/91/11/P032049111/P032049111_58_s.jpg"
+                    }
+                },
+                "other_memo": "夜景を望む窓から見渡す景色もお愉しみ頂けます。スカイツリーはご覧になれません。",
+                "shop_detail_memo": "",
+                "budget_memo": "Suica・Pasmo・manaca・ICOCAなど各種交通系ICカード利用可"
+            },
+            {
+                "id": "J003451129",
+                "name": "麻布茶房 東京ソラマチ店",
+                "address": "東京都墨田区押上１-1-2 1F東京スカイツリータウン・ソラマチEast Yard1階",
+                "lat": 35.7102575202,
+                "lng": 139.8107804551,
+                "genre": {
+                    "name": "カフェ・スイーツ",
+                    "catch": "1979年から愛される海外展開もする甘味処"
+                },
+                "catch": "創業36年！海外にも展開♪ 絶品イチゴパフェ",
+                "access": "東京スカイツリー駅正面からすぐ押上駅からすぐ",
+                "urls": {
+                    "pc": "https://www.hotpepper.jp/strJ003451129/?vos=nhppalsa000016"
+                },
+                "photo": {
+                    "pc": {
+                        "l": "https://imgfp.hotp.jp/IMGH/42/24/P039794224/P039794224_238.jpg",
+                        "m": "https://imgfp.hotp.jp/IMGH/42/24/P039794224/P039794224_168.jpg",
+                        "s": "https://imgfp.hotp.jp/IMGH/42/24/P039794224/P039794224_58_s.jpg"
+                    }
+                },
+                "other_memo": "",
+                "shop_detail_memo": "",
+                "budget_memo": ""
+            },
+            {
+                "id": "J001000856",
+                "name": "クアアイナ KUA `AINA 東京スカイツリータウン ソラマチ店",
+                "address": "東京都墨田区押上１－１－２東京スカイツリータウン・ソラマチ1F",
+                "lat": 35.7102705841,
+                "lng": 139.8111443126,
+                "genre": {
+                    "name": "カフェ・スイーツ",
+                    "catch": "グルメバーガー＆サンドウィッチレストラン"
+                },
+                "catch": "",
+                "access": "押上駅から徒歩４分",
+                "urls": {
+                    "pc": "https://www.hotpepper.jp/strJ001000856/?vos=nhppalsa000016"
+                },
+                "photo": {
+                    "pc": {
+                        "l": "https://imgfp.hotp.jp/IMGH/29/45/P001072945/P001072945_238.jpg",
+                        "m": "https://imgfp.hotp.jp/IMGH/29/45/P001072945/P001072945_168.jpg",
+                        "s": "https://imgfp.hotp.jp/IMGH/29/45/P001072945/P001072945_58_s.jpg"
+                    }
+                },
+                "other_memo": "",
+                "shop_detail_memo": "",
+                "budget_memo": ""
+            },
+            {
+                "id": "J001000917",
+                "name": "宮武讃岐うどん スカイツリータウン ソラマチ店",
+                "address": "東京都墨田区押上１‐１‐２　東京ソラマチ３F",
+                "lat": 35.7102705841,
+                "lng": 139.8111443126,
+                "genre": {
+                    "name": "和食",
+                    "catch": "讃岐うどん"
+                },
+                "catch": "",
+                "access": "東武伊勢崎線とうきょうスカイツリー駅 徒歩1分／都営浅草線押上駅B3番出口 徒歩1分",
+                "urls": {
+                    "pc": "https://www.hotpepper.jp/strJ001000917/?vos=nhppalsa000016"
+                },
+                "photo": {
+                    "pc": {
+                        "l": "https://imgfp.hotp.jp/IMGH/84/24/P010478424/P010478424_238.jpg",
+                        "m": "https://imgfp.hotp.jp/IMGH/84/24/P010478424/P010478424_168.jpg",
+                        "s": "https://imgfp.hotp.jp/IMGH/84/24/P010478424/P010478424_58_s.jpg"
+                    }
+                },
+                "other_memo": "",
+                "shop_detail_memo": "",
+                "budget_memo": ""
+            },
+            {
+                "id": "J001144284",
+                "name": "焼肉ドラゴ 押上店",
+                "address": "東京都墨田区押上２-4-9",
+                "lat": 35.7109121594,
+                "lng": 139.810431847,
+                "genre": {
+                    "name": "焼肉・ホルモン",
+                    "catch": "お肉をお腹いっぱい食べたいときはドラゴへ"
+                },
+                "catch": "ドラゴ＝迫力メニュー！ 脅威の提供スピード！",
+                "access": "押上駅より徒歩２分、東京スカイツリー駅より徒歩３０秒",
+                "urls": {
+                    "pc": "https://www.hotpepper.jp/strJ001144284/?vos=nhppalsa000016"
+                },
+                "photo": {
+                    "pc": {
+                        "l": "https://imgfp.hotp.jp/IMGH/11/55/P024271155/P024271155_238.jpg",
+                        "m": "https://imgfp.hotp.jp/IMGH/11/55/P024271155/P024271155_168.jpg",
+                        "s": "https://imgfp.hotp.jp/IMGH/11/55/P024271155/P024271155_58_s.jpg"
+                    }
+                },
+                "other_memo": "",
+                "shop_detail_memo": "コースもございます！誕生日や記念日、女子会にもぜひご利用ください♪",
+                "budget_memo": ""
+            },
+            {
+                "id": "J003784880",
+                "name": "窯焼きバルカフェ らんぷ+k",
+                "address": "東京都墨田区業平１-22-5 102",
+                "lat": 35.7092870755,
+                "lng": 139.8108452111,
+                "genre": {
+                    "name": "イタリアン・フレンチ",
+                    "catch": "窯焼きと発酵料理が自慢◎"
+                },
+                "catch": "特別な日を彩るプレート♪ オシャレなテラス席◎",
+                "access": "半蔵門線・浅草線「押上駅」A2出口より徒歩3分。とうきょうスカイツリー駅から199m",
+                "urls": {
+                    "pc": "https://www.hotpepper.jp/strJ003784880/?vos=nhppalsa000016"
+                },
+                "photo": {
+                    "pc": {
+                        "l": "https://imgfp.hotp.jp/IMGH/32/80/P044183280/P044183280_238.jpg",
+                        "m": "https://imgfp.hotp.jp/IMGH/32/80/P044183280/P044183280_168.jpg",
+                        "s": "https://imgfp.hotp.jp/IMGH/32/80/P044183280/P044183280_58_s.jpg"
+                    }
+                },
+                "other_memo": "",
+                "shop_detail_memo": "",
+                "budget_memo": ""
+            },
+            {
+                "id": "J003297592",
+                "name": "SRY+IZAKAYA French Italian Creation 東京スカイツリー駅前店",
+                "address": "東京都墨田区押上２-1-1 107",
+                "lat": 35.7107268682,
+                "lng": 139.8091569625,
+                "genre": {
+                    "name": "イタリアン・フレンチ",
+                    "catch": "お箸でカジュアルに楽しめる創作フレンチ"
+                },
+                "catch": "気軽にフレンチを満喫 人気のラクレットチーズ",
+                "access": "東武伊勢崎線とうきょうスカイツリー駅東口より徒歩約1分",
+                "urls": {
+                    "pc": "https://www.hotpepper.jp/strJ003297592/?vos=nhppalsa000016"
+                },
+                "photo": {
+                    "pc": {
+                        "l": "https://imgfp.hotp.jp/IMGH/24/42/P041252442/P041252442_238.jpg",
+                        "m": "https://imgfp.hotp.jp/IMGH/24/42/P041252442/P041252442_168.jpg",
+                        "s": "https://imgfp.hotp.jp/IMGH/24/42/P041252442/P041252442_58_s.jpg"
+                    }
+                },
+                "other_memo": "お席のご指定はいただいておりませんのでご了承くださいませ。",
+                "shop_detail_memo": "お席のご指定につきましては、ご要望に添えない場合がございます。ご了承下さいませ。",
+                "budget_memo": "お通し代：440円"
+            }
+        ]
+    }
+}
