@@ -1,10 +1,10 @@
 'use server'
 
-import { LiteRestaurant } from "../types/Restaurant";
-import { LiteRestaurantParams } from "../types/RestaurantParam";
-import { revalidatePath } from "next/cache";
+import { LiteRestaurant } from "@/types/LiteRestaurant";
+import { GetLiteRestaurant } from "@/types/GetLiteRestaurant";
 
-export async function getRestaurants(params: LiteRestaurantParams): Promise<LiteRestaurant> {
+
+export async function getRestaurants(params: GetLiteRestaurant): Promise<LiteRestaurant> {
     try {
     const apiUrl = process.env.HOT_PEPPER_API_URL
     const apiKey = process.env.HOT_PEPPER_API_KEY
@@ -21,5 +21,4 @@ export async function getRestaurants(params: LiteRestaurantParams): Promise<Lite
         console.error(error);
         throw new Error('フェッチに失敗しました');
     }
-   // revalidatePath('@/app/result')
 }

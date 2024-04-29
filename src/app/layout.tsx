@@ -3,6 +3,7 @@ import "./globals.css";
 import { Noto_Sans_JP } from 'next/font/google'
 
 
+
 const nsJpFont = Noto_Sans_JP({
   preload: false,
   variable: "--font-noto-sans-jp",
@@ -15,9 +16,8 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({children,}: Readonly<{ children: React.ReactNode;}>){
-  
   return (
-    <html lang="ja">
+    <html lang="ja" data-theme="night">
       <body className={nsJpFont.className}>
         {children}
       </body>

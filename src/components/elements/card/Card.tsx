@@ -1,17 +1,21 @@
 import type { NextPage } from 'next'
+import { title } from 'process';
 
-const Card: NextPage = () => {
+const Card: NextPage<{ photo: string , title:string , pr:string}> = ({ photo , title , pr }) => {
+    const usePhoto= photo;
+    const useTitle= title;
+    const useCatch= pr;
     return (
         <>
-            <div className="card card-compact w-96 bg-base-100 shadow-xl">
-                <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"/></figure>
+            <div className="card w-96 bg-base-100 shadow-xl">
+                <figure><img src={usePhoto} /></figure>
                 <div className="card-body">
-                    <h2 className="card-title">Shoes!</h2>
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
+                    <h2 className="card-title">{useTitle}</h2>
+                    <p>{useCatch}</p>
                 </div>
             </div>
         </>
-    )
-}
+    );
+};
 
 export default Card;

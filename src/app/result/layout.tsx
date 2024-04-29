@@ -2,7 +2,7 @@
 
 export default function resultLayout({ children, }: Readonly<{ children: React.ReactNode; }>) {
     return (
-        <div>
+        <div data-theme="cupcake">
             {children}
         </div>
     );

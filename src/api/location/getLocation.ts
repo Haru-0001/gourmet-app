@@ -1,5 +1,5 @@
 //位置情報を取得
-import { Coordinate } from "@/types/coordinate"
+import { Coordinate } from "@/types/Coordinate"
 
 export function getLocation(): Promise<{ params : Coordinate }> {
     //位置情報のオプション
