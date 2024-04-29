@@ -20,15 +20,14 @@ export default function Home() {
       latitude: userLocation.params.latitude,
       longitude: userLocation.params.longitude,
     };
-    const restaurantList = await getRestaurants(params);
-    setAllRestaurants([restaurantList]);
+    const restaurants = await getRestaurants(params);
+    setAllRestaurants([restaurants]);
   }
-  useEffect(() => {
-    fetchRestaurants();
-  }, []);
-  return (
+   return (
     <div>
-      <button onClick={fetchRestaurants}>ボタン</button>
+      <div onClick={fetchRestaurants}>
+        <FirstButton />
+      </div>
       <p>{JSON.stringify(userLocation)}</p>
       <p>{JSON.stringify(allRestaurant)}</p>
     </div>

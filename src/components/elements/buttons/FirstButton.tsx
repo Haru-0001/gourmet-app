@@ -1,6 +1,6 @@
 const FirstButton= () => {
     return(
-            <button className="btn">Button</button>
+            <button className="btn">ボタン</button>
     )
 }
 export default FirstButton;
