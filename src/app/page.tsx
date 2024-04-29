@@ -1,4 +1,5 @@
 'use client'
+
 import { getLocation } from "@/api/location/getLocation";
 import { getRestaurants } from "@/api/restaurants/lite/getLiteRestaurant";
 import FirstButton from "@/components/elements/buttons/FirstButton";
@@ -15,16 +16,21 @@ export default function Home() {
     setUserLocation(userLocation.params);
     const params = {
       start: 1,
-      range: 3,
+      range: 5,
       latitude: userLocation.params.latitude,
       longitude: userLocation.params.longitude,
     };
     const restaurantList = await getRestaurants(params);
     setAllRestaurants([restaurantList]);
   }
+  useEffect(() => {
+    fetchRestaurants();
+  }, []);
   return (
     <div>
       <button onClick={fetchRestaurants}>ボタン</button>
+      <p>{JSON.stringify(userLocation)}</p>
+      <p>{JSON.stringify(allRestaurant)}</p>
     </div>
   );
 }
