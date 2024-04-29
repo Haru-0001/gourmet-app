@@ -9,7 +9,7 @@ import { LiteRestaurant } from "@/api/restaurants/types/Restaurant";
 
 export default function Home() {
   const [userLocation, setUserLocation] = useState<Coordinate | null>(null)
-  const [allRestaurant,setAllRestaurants] = useState<LiteRestaurant[]>([]) // Update the type to an array of LiteRestaurant objects
+  const [allRestaurant,setAllRestaurants] = useState<LiteRestaurant[]>([])
 
   const fetchRestaurants = async () => {
     const userLocation = await getLocation();
