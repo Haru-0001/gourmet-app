@@ -1,22 +1,26 @@
 'use client'
 
-import Card from "@/components/elements/card/Card";
-import fetchRestaurant from "@/features/result/list/fetchRestaurant";
-
+import { CardType } from "@/types/CardType";
+import  Card from "@/components/elements/card/Card";
+import {fetchRestaurant} from "@/features/result/list/fetchRestaurant";
+import {cardMapper} from "@/features/result/card/cardMapper";
+import { useEffect, useState } from "react";
 
 
 export default function result() {
-    const result = fetchRestaurant();
-
+    const [cardMap, setCardMap] = useState<CardType[]>([]);
+    async function getRestaurants() {
+        const res = await fetchRestaurant();
+        setCardMap(cardMapper(res));
+    }
+    useEffect(() => {
+        getRestaurants();
+    }, []);
     return (
-        <>
-            <Card
-                photo={"https://imgfp.hotp.jp/IMGH/92/24/P044289224/P044289224_238.jpg"}
-                title={"うまいカレー"}
-                pr={"説明説明"}
-            />
-            <p>{JSON.stringify(result.userLocation)}</p>
-            <p>{JSON.stringify(result.allRestaurant)}</p>
-        </>
+        <div>
+            {cardMap.map(card => (
+                <Card key={card.key} photo={card.photo} title={card.title} pr={card.pr} />
+            ))}
+        </div>
     );
 }

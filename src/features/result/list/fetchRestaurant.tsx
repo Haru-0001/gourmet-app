@@ -1,27 +1,19 @@
 import { getLocation } from "@/api/location/getLocation";
 import { getRestaurants } from "@/api/restaurants/lite/getLiteRestaurant";
-import { LiteRestaurant } from "@/types/LiteRestaurant";
 import { Coordinate } from "@/types/Coordinate";
-import { useState, useEffect } from "react";
+import { GetLiteRestaurant } from "@/types/GetLiteRestaurant";
+import { LiteRestaurant } from "@/types/LiteRestaurant";
 
-export default function fetchRestaurant() {
-    const [userLocation, setUserLocation] = useState<Coordinate | null>(null)
-    const [allRestaurant, setAllRestaurants] = useState<LiteRestaurant[]>([])
-
-    const fetchRestaurants = async () => {
-        const userLocation = await getLocation();
-        setUserLocation(userLocation.params);
-        const params = {
-            start: 1,
-            range: 5,
-            latitude: userLocation.params.latitude,
-            longitude: userLocation.params.longitude,
-        };
-        const restaurants = await getRestaurants(params);
-        setAllRestaurants([restaurants]);
+export async function fetchRestaurant() {
+    const userLocation : {params : Coordinate} = await getLocation();
+    const params :GetLiteRestaurant = {
+        start: 1,
+        range: 5,
+        latitude: userLocation.params.latitude,
+        longitude: userLocation.params.longitude
     }
-    useEffect(() => {
-        fetchRestaurants();
-    }, []);
-    return { allRestaurant, userLocation }
+    const restaurants : LiteRestaurant = await getRestaurants(params);
+    return(
+        restaurants
+    )
 }

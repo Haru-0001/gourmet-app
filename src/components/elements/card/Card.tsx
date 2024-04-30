@@ -1,12 +1,11 @@
 import type { NextPage } from 'next'
-import { title } from 'process';
 
 const Card: NextPage<{ photo: string , title:string , pr:string}> = ({ photo , title , pr }) => {
     const usePhoto= photo;
     const useTitle= title;
     const useCatch= pr;
     return (
-        <>
+        <div className="m-8">
             <div className="card w-96 bg-base-100 shadow-xl">
                 <figure><img src={usePhoto} /></figure>
                 <div className="card-body">
@@ -14,7 +13,7 @@ const Card: NextPage<{ photo: string , title:string , pr:string}> = ({ photo , t
                     <p>{useCatch}</p>
                 </div>
             </div>
-        </>
+        </div>
     );
 };
 
