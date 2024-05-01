@@ -1,6 +1,6 @@
 'use client'
 
-import { CardType } from "@/types/RestaurantCard";
+import { RestaurantCard } from "@/types/RestaurantCard";
 import  Card from "@/components/elements/card/Card";
 import {fetchLiteRestaurant} from "@/features/restaurant/fetch/fetchLiteRestaurant";
 import {cardMapper} from "@/features/restaurant/card/cardMapper";
@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 
 
 export default function result() {
-    const [cardMap, setCardMap] = useState<CardType[]>([]);
+    const [cardMap, setCardMap] = useState<RestaurantCard[]>([]);
     async function getRestaurants() {
         const res = await fetchLiteRestaurant();
         setCardMap(cardMapper(res));
