@@ -13,7 +13,5 @@ export async function fetchRestaurant() {
         longitude: userLocation.params.longitude
     }
     const restaurants : LiteRestaurant = await getRestaurants(params);
-    return(
-        restaurants
-    )
+    return restaurants;
 }

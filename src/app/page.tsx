@@ -1,4 +1,4 @@
-import FirstButton from "@/components/elements/buttons/FirstButton";
+import FirstButton from "@/components/elements/button/FirstButton";
 import SendMessage from "@/components/elements/messages/SendMessage";
 import PromptMessage from "@/components/elements/messages/PromptMessage";
 import Link from "next/link";

@@ -2,8 +2,8 @@
 
 import { CardType } from "@/types/CardType";
 import  Card from "@/components/elements/card/Card";
-import {fetchRestaurant} from "@/features/result/list/fetchRestaurant";
-import {cardMapper} from "@/features/result/card/cardMapper";
+import {fetchRestaurant} from "@/features/restaurant/fetch/fetchLiteRestaurant";
+import {cardMapper} from "@/features/restaurant/card/cardMapper";
 import { useEffect, useState } from "react";
 
 
