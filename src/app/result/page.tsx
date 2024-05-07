@@ -1,26 +1,40 @@
 'use client'
-
-import { CardType } from "@/types/RestaurantCard";
 import  Card from "@/components/elements/card/Card";
-import {fetchLiteRestaurant} from "@/features/restaurant/fetch/fetchLiteRestaurant";
-import {cardMapper} from "@/features/restaurant/card/cardMapper";
-import { useEffect, useState } from "react";
+import { GetLiteRestaurant } from "@/types/GetLiteRestaurant";
+import {useEffect, useState } from "react";
+import { getLocation } from "@/api/location/getLocation";
+import { getRestaurants } from "@/api/restaurants/lite/getLiteRestaurant";
+import { LiteRestaurant } from "@/types/LiteRestaurant";
+import { RestaurantCard } from "@/types/RestaurantCard";
+import { cardMapper } from "@/features/restaurant/card/cardMapper";
 
 
 export default function result() {
-    const [cardMap, setCardMap] = useState<CardType[]>([]);
-    async function getRestaurants() {
-        const res = await fetchLiteRestaurant();
-        setCardMap(cardMapper(res));
+    const [restaurants, setRestaurant] = useState<LiteRestaurant>();
+    const [cards, setCards] = useState<RestaurantCard[]>([]);
+    async function getUserRestaurants() {
+        const location = await getLocation()
+        const params: GetLiteRestaurant = {
+            start: 1,
+            range: 5,
+            latitude: location.latitude,
+            longitude: location.longitude
+        }
+        const response = await getRestaurants(params)
+        setRestaurant(response)
+        const restaurantCards = cardMapper(response)
+        setCards(restaurantCards)
     }
+
     useEffect(() => {
-        getRestaurants();
-    }, []);
+        getUserRestaurants()
+    }, [])
+
     return (
         <div>
-            {cardMap.map(card => (
-                <Card key={card.key} photo={card.photo} title={card.title} pr={card.pr} />
+            {cards?.map((restaurant: RestaurantCard) => (
+                <Card key={restaurant.key} photo={restaurant.photo} title={restaurant.title} pr={restaurant.pr} />
             ))}
         </div>
-    );
+    )
 }
