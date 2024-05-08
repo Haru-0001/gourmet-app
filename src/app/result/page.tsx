@@ -1,5 +1,5 @@
 'use client'
-import { Card }from "@/components/ui/Card";
+import { Card }from "@/components/elements/Card";
 import { GetLocalRestaurant } from "@/types/GetLocalRestaurant";
 import {useEffect, useState } from "react";
 import { getLocation } from "@/api/location/getLocation";

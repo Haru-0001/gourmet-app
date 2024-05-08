@@ -1,6 +1,6 @@
-import { FirstButton } from "@/components/ui/FirstButton";
-import { SendMessage } from "@/components/ui/messages/SendMessage";
-import { PromptMessage } from "@/components/ui/messages/PromptMessage";
+import { FirstButton } from "@/components/elements/FirstButton";
+import { SendMessage } from "@/components/elements/messages/SendMessage";
+import { PromptMessage } from "@/components/elements/messages/PromptMessage";
 import { Slider } from "@/components/ui/slider"
 
 export default function Home() {
@@ -9,7 +9,7 @@ export default function Home() {
       <div className=" my-12"><SendMessage /></div>
       <div className=" my-8"><PromptMessage /></div>
       <div className="flex justify-center"><FirstButton /></div>
-      <div className="flex justify-center my-8"><Slider defaultValue={[33]} max={100} step={1} /></div>
+      <div className="flex justify-center my-16"><Slider defaultValue={[2]} max={4} step={1} /></div>
     </div>
   );
 }
