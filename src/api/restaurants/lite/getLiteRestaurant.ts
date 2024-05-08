@@ -1,10 +1,10 @@
 'use server'
 
 import { LiteRestaurant } from "@/types/LiteRestaurant";
-import { GetLiteRestaurant } from "@/types/GetLiteRestaurant";
+import { GetLocalRestaurant } from "@/types/GetLocalRestaurant";
 
 
-export async function getRestaurants(params: GetLiteRestaurant): Promise<LiteRestaurant> {
+export async function getLiteRestaurants(params: GetLocalRestaurant): Promise<LiteRestaurant> {
     try {
     const apiUrl = process.env.HOT_PEPPER_API_URL
     const apiKey = process.env.HOT_PEPPER_API_KEY
@@ -12,8 +12,8 @@ export async function getRestaurants(params: GetLiteRestaurant): Promise<LiteRes
 
     //const response = await fetch("http://localhost:3030/results");    //api_test
 
-    console.log(`${apiUrl}${apiKey}&type=lite&format=json&${start}&lat=${latitude}&lng=${longitude}&range=${range}からデータを取得します`)
-    const response = await fetch(`${apiUrl}${apiKey}&type=lite&format=json&${start}&lat=${latitude}&lng=${longitude}&range=${range}`);
+    console.log(`${apiUrl}${apiKey}&type=lite&format=json&start=${start}&lat=${latitude}&lng=${longitude}&range=${range}からデータを取得します`)
+    const response = await fetch(`${apiUrl}${apiKey}&type=lite&format=json&start=${start}&lat=${latitude}&lng=${longitude}&range=${range}`);
 
     if (!response.ok) {
         throw new Error(`HTTPエラー status: ${response.status}`);
