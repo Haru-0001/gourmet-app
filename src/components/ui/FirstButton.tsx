@@ -12,4 +12,4 @@ const FirstButton= () => {
         </Link>
     )
 }
-export default FirstButton;
+export {FirstButton};

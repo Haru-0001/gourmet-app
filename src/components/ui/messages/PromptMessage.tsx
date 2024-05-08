@@ -5,4 +5,4 @@ return(
     </p>
 )
 }
-export default PromptMessage;
+export { PromptMessage };

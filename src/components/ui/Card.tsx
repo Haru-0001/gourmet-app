@@ -15,4 +15,4 @@ const Card: NextPage<{ photo: string , title:string , pr:string}> = ({ photo , t
     );
 };
 
-export default Card;
+export { Card };

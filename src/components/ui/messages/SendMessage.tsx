@@ -6,4 +6,4 @@ const SendMessage = () => {
         </p>
     )
 }
-export default SendMessage;
+export { SendMessage };
