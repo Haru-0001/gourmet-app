@@ -1,8 +1,6 @@
-import FirstButton from "@/components/elements/button/FirstButton";
-import SendMessage from "@/components/elements/messages/SendMessage";
-import PromptMessage from "@/components/elements/messages/PromptMessage";
-import Link from "next/link";
-
+import FirstButton from "@/components/ui/FirstButton";
+import SendMessage from "@/components/ui/messages/SendMessage";
+import PromptMessage from "@/components/ui/messages/PromptMessage";
 
 export default function Home() {
   return (
@@ -10,6 +8,7 @@ export default function Home() {
       <div className=" my-12"><SendMessage /></div>
       <div className=" my-8"><PromptMessage /></div>
       <div className="flex justify-center"><FirstButton /></div>
+      <div className="flex justify-center my-8"></div>
     </div>
   );
 }
