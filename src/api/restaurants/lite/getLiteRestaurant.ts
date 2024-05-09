@@ -12,7 +12,7 @@ export async function getLiteRestaurants(params: GetLocalRestaurant): Promise<Li
 
     //const response = await fetch("http://localhost:3030/results");    //api_test
 
-    console.log(`${apiUrl}${apiKey}&type=lite&format=json&start=${start}&lat=${latitude}&lng=${longitude}&range=${range}からデータを取得します`)
+    console.log(`${params}のデータを取得します`)
     const response = await fetch(`${apiUrl}${apiKey}&type=lite&format=json&start=${start}&lat=${latitude}&lng=${longitude}&range=${range}`);
 
     if (!response.ok) {

@@ -10,7 +10,7 @@ export async function getRestaurants(params: GetLocalRestaurant): Promise<Restau
         const apiKey = process.env.HOT_PEPPER_API_KEY
         const { start, range, latitude, longitude } = params;
 
-        console.log(`${apiUrl}${apiKey}&format=json&start=${start}&lat=${latitude}&lng=${longitude}&range=${range}からデータを取得します`)
+        console.log(`${params}のデータを取得します`)
         const response = await fetch(`${apiUrl}${apiKey}&format=json&start=${start}&lat=${latitude}&lng=${longitude}&range=${range}`);
 
         if (!response.ok) {
