@@ -10,16 +10,22 @@ export async function getRestaurants(params: GetLocalRestaurant): Promise<Restau
         const apiKey = process.env.HOT_PEPPER_API_KEY
         const { start, range, latitude, longitude } = params;
 
+        //.env.localに設定したAPIのURLとAPIのキーを取得しfetchでホットペッパーグルメサーチAPIと通信
         console.log(`${params}のデータを取得します`)
         const response = await fetch(`${apiUrl}${apiKey}&format=json&start=${start}&lat=${latitude}&lng=${longitude}&range=${range}`);
 
+        //接続が成功したかどうかを確認し、成功していない場合はエラーを投げる
         if (!response.ok) {
             throw new Error(`HTTPエラー status: ${response.status}`);
         }
+
+        //json形式で取得したデータをrestaurantsに格納
         const restaurants: Restaurant = await response.json();
         console.log("Restaurantのデータを取得しました", response["status"], restaurants,);
+
         return restaurants;
     } catch (error) {
+        //エラー処理
         console.error(error);
         throw new Error('フェッチに失敗しました');
     }

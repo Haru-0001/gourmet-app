@@ -20,8 +20,10 @@ export async function getLiteRestaurants(params: GetLocalRestaurant): Promise<Li
     }
     const restaurants :LiteRestaurant = await response.json();
     console.log("LiteRestaurantのデータを取得しました",response["status"],restaurants,);
+
     return restaurants;
     }catch(error) {
+        //エラー処理
         console.error(error);
         throw new Error('フェッチに失敗しました');
     }

@@ -1,6 +1,6 @@
-//位置情報を取得
 import { Coordinate } from "@/types/Coordinate"
 
+//GeoLocationAPIを用いて位置情報を取得
 export function getLocation(): Promise<Coordinate> {
     return new Promise((resolve, reject) => {
         navigator.geolocation.getCurrentPosition(

@@ -7,6 +7,7 @@ import { sepHour } from "@/features/time/sepHour";
 import { sepSkyTheme } from "@/components/layouts/theme/sepSkyTheme";
 
 export default function Home() {
+  //Cookieから時間を取得
   const hour = Number(cookies().get("currentTime")?.value || "12");
   const skyState = sepHour(hour);
   const skyTheme = sepSkyTheme(skyState);
