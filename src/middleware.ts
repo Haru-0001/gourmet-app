@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
+//レンダリング前に時刻を取得してクッキーに保存
 export function middleware(req : NextRequest) {
     const currentTime = new Date().getHours();
     const response = NextResponse.next();

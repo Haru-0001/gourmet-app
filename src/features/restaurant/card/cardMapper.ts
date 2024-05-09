@@ -2,6 +2,7 @@ import { LiteRestaurant } from "@/types/LiteRestaurant";
 import { Restaurant } from "@/types/Restaurant";
 import { RestaurantCard } from "@/types/RestaurantCard";
 
+//Restaurantのデータをカードで使用しやすいように変換する
 export function cardMapper(jsonData: Restaurant | LiteRestaurant): RestaurantCard[] {
     const shopCard = jsonData.results.shop.map((
         shop:{

@@ -1,4 +1,4 @@
-import { useState } from "react";
+//時間帯によってメッセージを変えるコンポーネント
 
 const defaultMessage = "ワンタップで<br />お店を探そう！";
 const NightMessage = "今日も一日<br />お疲れ様です！";

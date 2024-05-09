@@ -1,6 +1,5 @@
 import { Slider } from "@/components/ui/slider"
 
-
 const RangeSlider = () => {
     return (
         <div className="relative mb-6 w-9/12">

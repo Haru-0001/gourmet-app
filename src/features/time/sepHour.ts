@@ -1,3 +1,5 @@
+//時間を受け取り、その時間帯を返す関数
+
 export function sepHour(hour: number): string {
     if(hour >= 18 || hour <= 4){
         return "night"
@@ -5,8 +7,7 @@ export function sepHour(hour: number): string {
         return "twilight"
     }else if(hour <= 10){
         return "morning"
-    }
-    else{
+    }else{
         return "noon"
     }
 }

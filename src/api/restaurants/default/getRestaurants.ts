@@ -3,7 +3,7 @@
 import { Restaurant } from "@/types/Restaurant";
 import { GetLocalRestaurant } from "@/types/GetLocalRestaurant";
 
-
+// レストランのデータを取得するAPI
 export async function getRestaurants(params: GetLocalRestaurant): Promise<Restaurant> {
     try {
         const apiUrl = process.env.HOT_PEPPER_API_URL

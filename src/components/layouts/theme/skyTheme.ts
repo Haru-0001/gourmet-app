@@ -1,3 +1,5 @@
+//各テーマの色を定義
+
 const nightTheme = "bg-indigo-950"
 const twilightTheme = "bg-gradient-to-b from-fuchsia-400 to-orange-400"
 const skyTheme = "bg-sky-300"

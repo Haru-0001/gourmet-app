@@ -1,7 +1,7 @@
 import { FirstButton } from "@/components/elements/FirstButton";
 import { SendMessage } from "@/components/elements/messages/SendMessage";
 import { PromptMessage } from "@/components/elements/messages/PromptMessage";
-import { RangeSlider } from "@/components/elements/RangeSlider";
+import { RangeSlider } from "@/components/dataInput/RangeSlider";
 import { cookies } from "next/headers";
 import { sepHour } from "@/features/time/sepHour";
 import { sepSkyTheme } from "@/components/layouts/theme/sepSkyTheme";
