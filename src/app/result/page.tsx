@@ -8,6 +8,7 @@ import { Restaurant } from "@/types/Restaurant";
 import { RestaurantCard } from "@/types/RestaurantCard";
 import { cardMapper } from "@/features/restaurant/card/cardMapper";
 
+
 // ユーザーの位置情報を取得し、その位置情報を元にレストランのデータを取得する
 export default function result() {
     const [restaurants, setRestaurant] = useState<Restaurant>();
@@ -33,10 +34,12 @@ export default function result() {
 
     return (
         // レストランのデータをカードに表示
-        <div className="flex flex-col items-center">
+        <div>
+            <div className="flex flex-col items-center">
             {cards?.map((restaurant: RestaurantCard) => (
                 <Card key={restaurant.key} photo={restaurant.photo} title={restaurant.title} pr={restaurant.pr} access={restaurant.access}/>
             ))}
+            </div>
         </div>
     )
 }
