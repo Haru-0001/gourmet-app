@@ -3,4 +3,5 @@ export type RestaurantCard = {
     photo: string,
     title: string,
     pr: string,
+    access: string,
 }

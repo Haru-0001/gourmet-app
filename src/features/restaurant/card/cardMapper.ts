@@ -10,13 +10,15 @@ export function cardMapper(jsonData: Restaurant | LiteRestaurant): RestaurantCar
             };
             name: string;
             catch: string;
+            access: string;
         },
         index: number
         ) => ({
         key: index,
         photo: shop.photo.pc.l,
         title: shop.name,
-        pr: shop.catch
+        pr: shop.catch,
+        access: shop.access,
     }));
     return shopCard
 }

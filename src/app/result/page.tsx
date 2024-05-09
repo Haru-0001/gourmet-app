@@ -33,7 +33,7 @@ export default function result() {
     return (
         <div className="flex flex-col items-center">
             {cards?.map((restaurant: RestaurantCard) => (
-                <Card key={restaurant.key} photo={restaurant.photo} title={restaurant.title} pr={restaurant.pr} />
+                <Card key={restaurant.key} photo={restaurant.photo} title={restaurant.title} pr={restaurant.pr} access={restaurant.access}/>
             ))}
         </div>
     )

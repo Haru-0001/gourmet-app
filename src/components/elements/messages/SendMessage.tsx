@@ -1,6 +1,6 @@
 const SendMessage = () => {
     return (
-        <p className="text-6xl text-center" >
+        <p className="text-4xl text-center md:text-6xl" >
             今日も一日<br />
             お疲れ様です!
         </p>

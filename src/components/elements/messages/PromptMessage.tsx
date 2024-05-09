@@ -1,6 +1,6 @@
 const PromptMessage = () => {
 return(
-    <p className="text-4xl text-center opacity-75">
+    <p className="text-2xl md:text-4xl text-center">
         タップで検索！
     </p>
 )
