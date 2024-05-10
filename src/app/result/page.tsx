@@ -7,28 +7,29 @@ import { getRestaurants } from "@/api/restaurants/default/getRestaurants";
 import { Restaurant } from "@/types/Restaurant";
 import { RestaurantCard } from "@/types/RestaurantCard";
 import { cardMapper } from "@/features/restaurant/card/cardMapper";
-
+import jsCookie from "js-cookie";
 
 // ユーザーの位置情報を取得し、その位置情報を元にレストランのデータを取得する
 export default function result() {
     const [restaurants, setRestaurant] = useState<Restaurant>();
     const [cards, setCards] = useState<RestaurantCard[]>([]);
-    async function getUserRestaurants() {
-        const location = await getLocation()
-        const params: GetLocalRestaurant = {
-            start: 1,
-            range: 5,
-            latitude: location.latitude,
-            longitude: location.longitude
-        }
-        const response = await getRestaurants(params)
-        setRestaurant(response)
-        const restaurantCards = cardMapper(response)
-        setCards(restaurantCards)
-    }
 
     //useEffectを使用してgetUserRestaurantsを実行
     useEffect(() => {
+        const getUserRestaurants = async () => {
+                const location = await getLocation()
+                const range = Number(jsCookie.get("range"))
+                const params: GetLocalRestaurant = {
+                    start: 1,
+                    range: range,
+                    latitude: location.latitude,
+                    longitude: location.longitude
+                }
+                const response = await getRestaurants(params)
+                setRestaurant(response)
+                const restaurantCards = cardMapper(response)
+                setCards(restaurantCards)
+            }
         getUserRestaurants()
     }, [])
 
