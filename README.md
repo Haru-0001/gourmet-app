@@ -12,17 +12,27 @@
     -[Next.js](https://nextjs.org/)
     -[AppRouter](https://nextjs.org/docs/app)を使用
     -[Tailwind CSS](https://tailwindcss.com/)
-    -[daisyUI](https://daisyui.com/)
+    -[shadcn/ui](https://ui.shadcn.com)
 
 #### バックエンド
     -[TypeScript](https://www.typescriptlang.org/)
     -[Next.js](https://nextjs.org/)
 
-### インフラ
+#### インフラ
     -実装予定
 
 #### デザイン
     -[Figma](https://www.figma.com/)
+
+#### 実行環境
+    -Google Chrome ver: 124.0.6367.119 (64bit)
+
+#### 今後の実装(至急)
+    -ページネーション
+    -店舗詳細画面をmodalで表示
+    -周囲にレストランが見つからなかった場合の画面実装
+    -ヘッダーの実装
+    -フッターの実装
 
 ## 今後の展望
     -サイトの公開(優先順位：★★★)
@@ -41,7 +51,8 @@
     -[App Router _ Next.js 公式ドキュメント 日本語翻訳プロジェクト](https://ja.next-community-docs.dev/docs/app-router)
     -[位置情報 API の使用 - Web API | MDN](https://developer.mozilla.org/ja/docs/Web/API/Geolocation_API)
     -[TypeScript入門『サバイバルTypeScript』](https://typescriptbook.jp/)
-    -[daisyUI](https://daisyui.com/)
     -[ホットペッパー _ APIリファレンス](https://webservice.recruit.co.jp/doc/hotpepper/reference.html)
-    -[Jamstack を学ぶ用語集](https://www.commte.co.jp/learn-nextjs)
-    -[コムテブログ](https://commte.net/)
+    -[shadcn/ui](https://ui.shadcn.com/docs)
+    -[radix Ui](https://www.radix-ui.com/primitives)
+    -[Tailwind CSS](https://tailwindcss.com)
+    -[Flowbite](https://flowbite.com/)
