@@ -10,7 +10,6 @@
     -[TypeScript](https://www.typescriptlang.org/)
     -[React](https://react.dev/)
     -[Next.js](https://nextjs.org/)
-    -[AppRouter](https://nextjs.org/docs/app)を使用
     -[Tailwind CSS](https://tailwindcss.com/)
     -[shadcn/ui](https://ui.shadcn.com)
 
