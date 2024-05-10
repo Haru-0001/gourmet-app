@@ -11,7 +11,7 @@ export async function getRestaurants(params: GetLocalRestaurant): Promise<Restau
         const { start, range, latitude, longitude } = params;
 
         //.env.localに設定したAPIのURLとAPIのキーを取得しfetchでホットペッパーグルメサーチAPIと通信
-        console.log(`${params}のデータを取得します`)
+        console.log(`paramsのデータ: ${JSON.stringify(params)}`)
         const response = await fetch(`${apiUrl}${apiKey}&format=json&start=${start}&lat=${latitude}&lng=${longitude}&range=${range}`);
 
         //接続が成功したかどうかを確認し、成功していない場合はエラーを投げる
