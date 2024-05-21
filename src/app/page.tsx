@@ -8,9 +8,9 @@ import { sepSkyTheme } from "@/components/layouts/theme/sepSkyTheme";
 
 export default function Home() {
   //Cookieから時間を取得
-  const hour = Number(cookies().get("currentTime")?.value || "12");
-  const skyState = sepHour(hour);
-  const skyTheme = sepSkyTheme(skyState);
+  const hour = Number(cookies().get("currentTime")?.value || "12");  //現在の時刻(h) 初期値は12時
+  const skyState = sepHour(hour); //時間帯を取得
+  const skyTheme = sepSkyTheme(skyState); //時間帯のテーマを取得
 
   return (
     <div className={`h-screen flex flex-col ${skyTheme}`}>
