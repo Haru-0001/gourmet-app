@@ -1,270 +1,919 @@
 {
-    "results": {
-        "api_version": "1.30",
-        "results_available": 167,
-        "results_returned": "10",
-        "results_start": 1,
-        "shop": [
-            {
-                "id": "J001037286",
-                "name": "駒形前川 東京スカイツリーソラマチ店",
-                "address": "東京都墨田区押上１－１－２　スカイツリータウン・ソラマチ７Ｆ",
-                "lat": 35.7100342098,
-                "lng": 139.8107013042,
-                "genre": {
-                    "name": "和食",
-                    "catch": "200年愛され続ける老舗の鰻"
-                },
-                "catch": "【創業２００年】 【ソラマチ】",
-                "access": "押上駅より徒歩1分　　東京スカイツリーソラマチ７Ｆ",
-                "urls": {
-                    "pc": "https://www.hotpepper.jp/strJ001037286/?vos=nhppalsa000016"
-                },
-                "photo": {
-                    "pc": {
-                        "l": "https://imgfp.hotp.jp/IMGH/06/00/P022150600/P022150600_238.jpg",
-                        "m": "https://imgfp.hotp.jp/IMGH/06/00/P022150600/P022150600_168.jpg",
-                        "s": "https://imgfp.hotp.jp/IMGH/06/00/P022150600/P022150600_58_s.jpg"
+    "test-data": {
+        "results": {
+            "api_version": "1.30",
+            "results_available": 165,
+            "results_returned": "10",
+            "results_start": 1,
+            "shop": [
+                {
+                    "id": "J001037286",
+                    "name": "駒形前川 東京スカイツリーソラマチ店",
+                    "logo_image": "https://imgfp.hotp.jp/IMGH/53/14/P022095314/P022095314_69.jpg",
+                    "name_kana": "こまがたまえかわ　とうきょうすかいつりーそらまちてん",
+                    "address": "東京都墨田区押上１－１－２　スカイツリータウン・ソラマチ７Ｆ",
+                    "station_name": "押上",
+                    "ktai_coupon": 1,
+                    "large_service_area": {
+                        "code": "SS10",
+                        "name": "関東"
+                    },
+                    "service_area": {
+                        "code": "SA11",
+                        "name": "東京"
+                    },
+                    "large_area": {
+                        "code": "Z011",
+                        "name": "東京"
+                    },
+                    "middle_area": {
+                        "code": "Y017",
+                        "name": "錦糸町・浅草橋・両国・亀戸"
+                    },
+                    "small_area": {
+                        "code": "XA3Y",
+                        "name": "東京スカイツリー"
+                    },
+                    "lat": 35.7100342098,
+                    "lng": 139.8107013042,
+                    "genre": {
+                        "name": "和食",
+                        "catch": "200年愛され続ける老舗の鰻",
+                        "code": "G004"
+                    },
+                    "budget": {
+                        "code": "B004",
+                        "name": "5001～7000円",
+                        "average": "5000円"
+                    },
+                    "catch": "【創業２００年】 【ソラマチ】",
+                    "capacity": 42,
+                    "access": "押上駅より徒歩1分　　東京スカイツリーソラマチ７Ｆ",
+                    "mobile_access": "押上駅より徒歩1分  東京ｽｶｲﾂﾘｰｿﾗﾏﾁ7F",
+                    "urls": {
+                        "pc": "https://www.hotpepper.jp/strJ001037286/?vos=nhppalsa000016"
+                    },
+                    "photo": {
+                        "pc": {
+                            "l": "https://imgfp.hotp.jp/IMGH/06/00/P022150600/P022150600_238.jpg",
+                            "m": "https://imgfp.hotp.jp/IMGH/06/00/P022150600/P022150600_168.jpg",
+                            "s": "https://imgfp.hotp.jp/IMGH/06/00/P022150600/P022150600_58_s.jpg"
+                        },
+                        "mobile": {
+                            "l": "https://imgfp.hotp.jp/IMGH/06/00/P022150600/P022150600_168.jpg",
+                            "s": "https://imgfp.hotp.jp/IMGH/06/00/P022150600/P022150600_100.jpg"
+                        }
+                    },
+                    "open": "月～日、祝日、祝前日: 11:00～23:00 （料理L.O. 22:00 ドリンクL.O. 22:00）",
+                    "close": "スカイツリータウン・ソラマチに準ずる",
+                    "party_capacity": 42,
+                    "other_memo": "中国語メニューあり",
+                    "shop_detail_memo": "ご不明点・ご相談等、お気軽に店舗へご相談下さい。",
+                    "budget_memo": "",
+                    "wedding": "詳しくは店舗までお問い合わせください。",
+                    "course": "あり",
+                    "free_drink": "なし ：飲み放題のご用意はございませんが、各種ドリンク取り揃えております。",
+                    "free_food": "なし ：こだわりの食材をひとつひとつ料理人が調理したものを提供しておりますので、食べ放題は行っておりません。",
+                    "private_room": "なし ：詳しくは店舗までお問い合わせください。",
+                    "horigotatsu": "なし ：詳しくは店舗までお問い合わせください。",
+                    "tatami": "なし ：詳しくは店舗までお問い合わせください。",
+                    "card": "利用可",
+                    "non_smoking": "全面禁煙",
+                    "charter": "貸切不可 ：事前予約のみ対応。お気軽にお問合せ下さい。",
+                    "parking": "あり ：商業施設の駐車場有り。",
+                    "barrier_free": "あり",
+                    "show": "なし",
+                    "karaoke": "なし",
+                    "band": "不可",
+                    "tv": "なし",
+                    "lunch": "あり",
+                    "midnight": "営業していない",
+                    "english": "あり",
+                    "pet": "不可",
+                    "child": "お子様連れ歓迎 ：お子様連れ大歓迎です。ご家族でもゆったりお食事可能です。",
+                    "wifi": "なし",
+                    "coupon_urls": {
+                        "pc": "https://www.hotpepper.jp/strJ001037286/map/?vos=nhppalsa000016",
+                        "sp": "https://www.hotpepper.jp/strJ001037286/scoupon/?vos=nhppalsa000016"
                     }
                 },
-                "other_memo": "中国語メニューあり",
-                "shop_detail_memo": "ご不明点・ご相談等、お気軽に店舗へご相談下さい。",
-                "budget_memo": ""
-            },
-            {
-                "id": "J001226181",
-                "name": "東京スカイツリータウン(R)の庭 空とグランピングとBBQ",
-                "address": "東京都墨田区押上１丁目1-2東京スカイツリータウン・ソラマチ5階",
-                "lat": 35.7101142005,
-                "lng": 139.8106871355,
-                "genre": {
-                    "name": "カラオケ・パーティ",
-                    "catch": "手ぶらでBBQ&グランピング♪"
-                },
-                "catch": "お手軽バーベキュー♪ 最大50名様までご利用可能",
-                "access": "押上・スカイツリー駅より直結",
-                "urls": {
-                    "pc": "https://www.hotpepper.jp/strJ001226181/?vos=nhppalsa000016"
-                },
-                "photo": {
-                    "pc": {
-                        "l": "https://imgfp.hotp.jp/IMGH/56/20/P033815620/P033815620_238.jpg",
-                        "m": "https://imgfp.hotp.jp/IMGH/56/20/P033815620/P033815620_168.jpg",
-                        "s": "https://imgfp.hotp.jp/IMGH/56/20/P033815620/P033815620_58_s.jpg"
+                {
+                    "id": "J001226181",
+                    "name": "東京スカイツリータウン(R)の庭 空とグランピングとBBQ",
+                    "logo_image": "https://imgfp.hotp.jp/IMGH/56/23/P033815623/P033815623_69.jpg",
+                    "name_kana": "とうきょうすかいつりーたうんのにわ　そらとぐらんぴんぐとばーべきゅー",
+                    "address": "東京都墨田区押上１丁目1-2東京スカイツリータウン・ソラマチ5階",
+                    "station_name": "押上",
+                    "ktai_coupon": 1,
+                    "large_service_area": {
+                        "code": "SS10",
+                        "name": "関東"
+                    },
+                    "service_area": {
+                        "code": "SA11",
+                        "name": "東京"
+                    },
+                    "large_area": {
+                        "code": "Z011",
+                        "name": "東京"
+                    },
+                    "middle_area": {
+                        "code": "Y017",
+                        "name": "錦糸町・浅草橋・両国・亀戸"
+                    },
+                    "small_area": {
+                        "code": "XA3Y",
+                        "name": "東京スカイツリー"
+                    },
+                    "lat": 35.7101142005,
+                    "lng": 139.8106871355,
+                    "genre": {
+                        "name": "カラオケ・パーティ",
+                        "catch": "手ぶらでBBQ&グランピング♪",
+                        "code": "G011"
+                    },
+                    "budget": {
+                        "code": "B004",
+                        "name": "5001～7000円",
+                        "average": "お支払方法は,現金または事前振込,Paypalでのお支払いとなります"
+                    },
+                    "catch": "お手軽バーベキュー♪ 最大50名様までご利用可能",
+                    "capacity": 50,
+                    "access": "押上・スカイツリー駅より直結",
+                    "mobile_access": "押上･ｽｶｲﾂﾘｰ駅より直結",
+                    "urls": {
+                        "pc": "https://www.hotpepper.jp/strJ001226181/?vos=nhppalsa000016"
+                    },
+                    "photo": {
+                        "pc": {
+                            "l": "https://imgfp.hotp.jp/IMGH/56/20/P033815620/P033815620_238.jpg",
+                            "m": "https://imgfp.hotp.jp/IMGH/56/20/P033815620/P033815620_168.jpg",
+                            "s": "https://imgfp.hotp.jp/IMGH/56/20/P033815620/P033815620_58_s.jpg"
+                        },
+                        "mobile": {
+                            "l": "https://imgfp.hotp.jp/IMGH/56/20/P033815620/P033815620_168.jpg",
+                            "s": "https://imgfp.hotp.jp/IMGH/56/20/P033815620/P033815620_100.jpg"
+                        }
+                    },
+                    "open": "月～日、祝日、祝前日: 10:00～22:00 （料理L.O. 21:00 ドリンクL.O. 21:30）",
+                    "close": "不定休",
+                    "party_capacity": 60,
+                    "other_memo": "ご利用料金に機材・消耗品・調味料等含まれております。",
+                    "shop_detail_memo": "未成年の方のみのご利用はお断りさせていただいております。",
+                    "budget_memo": "領収証の発行は現地スタッフにお申し付けください。",
+                    "wedding": "",
+                    "course": "あり",
+                    "free_drink": "あり",
+                    "free_food": "なし",
+                    "private_room": "なし",
+                    "horigotatsu": "なし",
+                    "tatami": "なし",
+                    "card": "利用可",
+                    "non_smoking": "全面禁煙",
+                    "charter": "貸切可 ：全面貸切の場合、最低保証料金がございます。",
+                    "parking": "なし",
+                    "barrier_free": "なし",
+                    "show": "なし",
+                    "karaoke": "なし",
+                    "band": "不可",
+                    "tv": "なし",
+                    "lunch": "あり",
+                    "midnight": "営業していない",
+                    "english": "なし",
+                    "pet": "不可",
+                    "child": "お子様連れ歓迎",
+                    "wifi": "なし",
+                    "coupon_urls": {
+                        "pc": "https://www.hotpepper.jp/strJ001226181/map/?vos=nhppalsa000016",
+                        "sp": "https://www.hotpepper.jp/strJ001226181/scoupon/?vos=nhppalsa000016"
                     }
                 },
-                "other_memo": "ご利用料金に機材・消耗品・調味料等含まれております。",
-                "shop_detail_memo": "未成年の方のみのご利用はお断りさせていただいております。",
-                "budget_memo": "領収証の発行は現地スタッフにお申し付けください。"
-            },
-            {
-                "id": "J001044354",
-                "name": "叙々苑 東京スカイツリータウン・ソラマチ店",
-                "address": "東京都墨田区押上１-１-２ 東京スカイツリータウン ソラマチ３０F",
-                "lat": 35.7100344879,
-                "lng": 139.8107138031,
-                "genre": {
-                    "name": "焼肉・ホルモン",
-                    "catch": "焼肉"
-                },
-                "catch": "",
-                "access": "-",
-                "urls": {
-                    "pc": "https://www.hotpepper.jp/strJ001044354/?vos=nhppalsa000016"
-                },
-                "photo": {
-                    "pc": {
-                        "l": "https://imgfp.hotp.jp/IMGH/63/49/P030726349/P030726349_238.jpg",
-                        "m": "https://imgfp.hotp.jp/IMGH/63/49/P030726349/P030726349_168.jpg",
-                        "s": "https://imgfp.hotp.jp/IMGH/63/49/P030726349/P030726349_58_s.jpg"
+                {
+                    "id": "J001044354",
+                    "name": "叙々苑 東京スカイツリータウン・ソラマチ店",
+                    "logo_image": "https://imgfp.hotp.jp/IMGH/25/74/P022022574/P022022574_69.jpg",
+                    "name_kana": "じょじょえん　とうきょうすかいつりーたうんそらまちてん",
+                    "address": "東京都墨田区押上１-１-２ 東京スカイツリータウン ソラマチ３０F",
+                    "station_name": "押上",
+                    "ktai_coupon": 1,
+                    "large_service_area": {
+                        "code": "SS10",
+                        "name": "関東"
+                    },
+                    "service_area": {
+                        "code": "SA11",
+                        "name": "東京"
+                    },
+                    "large_area": {
+                        "code": "Z011",
+                        "name": "東京"
+                    },
+                    "middle_area": {
+                        "code": "Y017",
+                        "name": "錦糸町・浅草橋・両国・亀戸"
+                    },
+                    "small_area": {
+                        "code": "XA3X",
+                        "name": "押上"
+                    },
+                    "lat": 35.7100344879,
+                    "lng": 139.8107138031,
+                    "genre": {
+                        "name": "焼肉・ホルモン",
+                        "catch": "焼肉",
+                        "code": "G008"
+                    },
+                    "budget": {
+                        "code": "B005",
+                        "name": "7001～10000円",
+                        "average": ""
+                    },
+                    "catch": "",
+                    "capacity": 90,
+                    "access": "-",
+                    "mobile_access": "-",
+                    "urls": {
+                        "pc": "https://www.hotpepper.jp/strJ001044354/?vos=nhppalsa000016"
+                    },
+                    "photo": {
+                        "pc": {
+                            "l": "https://imgfp.hotp.jp/IMGH/63/49/P030726349/P030726349_238.jpg",
+                            "m": "https://imgfp.hotp.jp/IMGH/63/49/P030726349/P030726349_168.jpg",
+                            "s": "https://imgfp.hotp.jp/IMGH/63/49/P030726349/P030726349_58_s.jpg"
+                        },
+                        "mobile": {
+                            "l": "https://imgfp.hotp.jp/IMGH/63/49/P030726349/P030726349_168.jpg",
+                            "s": "https://imgfp.hotp.jp/IMGH/63/49/P030726349/P030726349_100.jpg"
+                        }
+                    },
+                    "open": "月～日、祝日、祝前日: 10:30～21:30",
+                    "close": "なし",
+                    "party_capacity": "",
+                    "other_memo": "",
+                    "shop_detail_memo": "",
+                    "budget_memo": "",
+                    "wedding": "",
+                    "free_drink": "あり",
+                    "free_food": "なし",
+                    "private_room": "なし",
+                    "horigotatsu": "なし",
+                    "tatami": "なし",
+                    "card": "利用不可",
+                    "non_smoking": "全面禁煙",
+                    "charter": "貸切不可",
+                    "parking": "あり",
+                    "barrier_free": "なし",
+                    "show": "なし",
+                    "karaoke": "なし",
+                    "band": "不可",
+                    "tv": "なし",
+                    "lunch": "なし",
+                    "midnight": "営業していない",
+                    "english": "なし",
+                    "pet": "不可",
+                    "child": "お子様連れOK",
+                    "wifi": "未確認",
+                    "coupon_urls": {
+                        "pc": "https://www.hotpepper.jp/strJ001044354/map/?vos=nhppalsa000016",
+                        "sp": "https://www.hotpepper.jp/strJ001044354/scoupon/?vos=nhppalsa000016"
                     }
                 },
-                "other_memo": "",
-                "shop_detail_memo": "",
-                "budget_memo": ""
-            },
-            {
-                "id": "J001018342",
-                "name": "ひつまぶし 名古屋 備長 東京スカイツリータウン ソラマチ店",
-                "address": "東京都墨田区押上１-1-2 東京スカイツリータウン　ソラマチ6F",
-                "lat": 35.7099150583,
-                "lng": 139.8107665812,
-                "genre": {
-                    "name": "和食",
-                    "catch": "スカイツリーソラマチ6F　ひつまぶし専門店"
-                },
-                "catch": "東京スカイツリーソラマチ 名店の【鰻・ひつまぶし】",
-                "access": "都営浅草線・半蔵門線・京成線・東武線押上駅 直結・B3出口徒歩1分／東武線とうきょうスカイツリー駅正面口 徒歩5分",
-                "urls": {
-                    "pc": "https://www.hotpepper.jp/strJ001018342/?vos=nhppalsa000016"
-                },
-                "photo": {
-                    "pc": {
-                        "l": "https://imgfp.hotp.jp/IMGH/91/11/P032049111/P032049111_238.jpg",
-                        "m": "https://imgfp.hotp.jp/IMGH/91/11/P032049111/P032049111_168.jpg",
-                        "s": "https://imgfp.hotp.jp/IMGH/91/11/P032049111/P032049111_58_s.jpg"
+                {
+                    "id": "J001018342",
+                    "name": "ひつまぶし 名古屋 備長 東京スカイツリータウン ソラマチ店",
+                    "logo_image": "https://imgfp.hotp.jp/IMGH/88/89/P011998889/P011998889_69.jpg",
+                    "name_kana": "ひつまぶしなごやびんちょうとうきょうすかいつりーたうんそらまちてん",
+                    "address": "東京都墨田区押上１-1-2 東京スカイツリータウン　ソラマチ6F",
+                    "station_name": "とうきょうスカイツリー",
+                    "ktai_coupon": 1,
+                    "large_service_area": {
+                        "code": "SS10",
+                        "name": "関東"
+                    },
+                    "service_area": {
+                        "code": "SA11",
+                        "name": "東京"
+                    },
+                    "large_area": {
+                        "code": "Z011",
+                        "name": "東京"
+                    },
+                    "middle_area": {
+                        "code": "Y017",
+                        "name": "錦糸町・浅草橋・両国・亀戸"
+                    },
+                    "small_area": {
+                        "code": "XA3Y",
+                        "name": "東京スカイツリー"
+                    },
+                    "lat": 35.7099150583,
+                    "lng": 139.8107665812,
+                    "genre": {
+                        "name": "和食",
+                        "catch": "スカイツリーソラマチ6F　ひつまぶし専門店",
+                        "code": "G004"
+                    },
+                    "budget": {
+                        "code": "B008",
+                        "name": "4001～5000円",
+                        "average": "通常平均4000円"
+                    },
+                    "catch": "東京スカイツリーソラマチ 名店の【鰻・ひつまぶし】",
+                    "capacity": 46,
+                    "access": "都営浅草線・半蔵門線・京成線・東武線押上駅 直結・B3出口徒歩1分／東武線とうきょうスカイツリー駅正面口 徒歩5分",
+                    "mobile_access": "浅草線押上駅直結/とうきょうｽｶｲﾂﾘｰ駅徒歩5分",
+                    "urls": {
+                        "pc": "https://www.hotpepper.jp/strJ001018342/?vos=nhppalsa000016"
+                    },
+                    "photo": {
+                        "pc": {
+                            "l": "https://imgfp.hotp.jp/IMGH/91/11/P032049111/P032049111_238.jpg",
+                            "m": "https://imgfp.hotp.jp/IMGH/91/11/P032049111/P032049111_168.jpg",
+                            "s": "https://imgfp.hotp.jp/IMGH/91/11/P032049111/P032049111_58_s.jpg"
+                        },
+                        "mobile": {
+                            "l": "https://imgfp.hotp.jp/IMGH/91/11/P032049111/P032049111_168.jpg",
+                            "s": "https://imgfp.hotp.jp/IMGH/91/11/P032049111/P032049111_100.jpg"
+                        }
+                    },
+                    "open": "月～日、祝日、祝前日: 11:00～23:00 （料理L.O. 22:00 ドリンクL.O. 22:00）",
+                    "close": "年中無休(東京ソラマチの営業日に準ずる)",
+                    "party_capacity": 46,
+                    "other_memo": "夜景を望む窓から見渡す景色もお愉しみ頂けます。スカイツリーはご覧になれません。",
+                    "shop_detail_memo": "",
+                    "budget_memo": "Suica・Pasmo・manaca・ICOCAなど各種交通系ICカード利用可",
+                    "wedding": "ご相談下さい。",
+                    "course": "あり",
+                    "free_drink": "なし ：ございません。",
+                    "free_food": "なし ：ございません。",
+                    "private_room": "なし ：ございません。テーブル席をご用意しております。",
+                    "horigotatsu": "なし ：ございません。テーブル席をご用意しております。",
+                    "tatami": "なし ：ございません。テーブル席をご用意しております。",
+                    "card": "利用可",
+                    "non_smoking": "全面禁煙",
+                    "charter": "貸切不可",
+                    "parking": "あり ：東京ソラマチ駐車場無料サービスあり（ソラマチ内お買上額合計3000円以上で1時間、5000円以上で２時間）",
+                    "barrier_free": "あり ：エレベータで6Fまでお越しください。押上駅からもエレベーターで直結です。",
+                    "show": "なし",
+                    "karaoke": "なし",
+                    "band": "不可",
+                    "tv": "なし",
+                    "lunch": "なし",
+                    "midnight": "営業していない",
+                    "english": "あり",
+                    "pet": "不可",
+                    "child": "お子様連れ歓迎 ：10歳以下限定のお子さまメニューお子様用の椅子も用意して、お待ちしております。ベビーカー入店可能。 ",
+                    "wifi": "あり",
+                    "coupon_urls": {
+                        "pc": "https://www.hotpepper.jp/strJ001018342/map/?vos=nhppalsa000016",
+                        "sp": "https://www.hotpepper.jp/strJ001018342/scoupon/?vos=nhppalsa000016"
                     }
                 },
-                "other_memo": "夜景を望む窓から見渡す景色もお愉しみ頂けます。スカイツリーはご覧になれません。",
-                "shop_detail_memo": "",
-                "budget_memo": "Suica・Pasmo・manaca・ICOCAなど各種交通系ICカード利用可"
-            },
-            {
-                "id": "J003451129",
-                "name": "麻布茶房 東京ソラマチ店",
-                "address": "東京都墨田区押上１-1-2 1F東京スカイツリータウン・ソラマチEast Yard1階",
-                "lat": 35.7102575202,
-                "lng": 139.8107804551,
-                "genre": {
-                    "name": "カフェ・スイーツ",
-                    "catch": "1979年から愛される海外展開もする甘味処"
-                },
-                "catch": "創業36年！海外にも展開♪ 絶品イチゴパフェ",
-                "access": "東京スカイツリー駅正面からすぐ押上駅からすぐ",
-                "urls": {
-                    "pc": "https://www.hotpepper.jp/strJ003451129/?vos=nhppalsa000016"
-                },
-                "photo": {
-                    "pc": {
-                        "l": "https://imgfp.hotp.jp/IMGH/42/24/P039794224/P039794224_238.jpg",
-                        "m": "https://imgfp.hotp.jp/IMGH/42/24/P039794224/P039794224_168.jpg",
-                        "s": "https://imgfp.hotp.jp/IMGH/42/24/P039794224/P039794224_58_s.jpg"
+                {
+                    "id": "J003451129",
+                    "name": "麻布茶房 東京ソラマチ店",
+                    "logo_image": "https://imgfp.hotp.jp/IMGH/50/76/P022485076/P022485076_69.jpg",
+                    "name_kana": "あざぶさぼう　とうきょうそらまちてん",
+                    "address": "東京都墨田区押上１-1-2 1F東京スカイツリータウン・ソラマチEast Yard1階",
+                    "station_name": "押上",
+                    "ktai_coupon": 0,
+                    "large_service_area": {
+                        "code": "SS10",
+                        "name": "関東"
+                    },
+                    "service_area": {
+                        "code": "SA11",
+                        "name": "東京"
+                    },
+                    "large_area": {
+                        "code": "Z011",
+                        "name": "東京"
+                    },
+                    "middle_area": {
+                        "code": "Y017",
+                        "name": "錦糸町・浅草橋・両国・亀戸"
+                    },
+                    "small_area": {
+                        "code": "XA3Y",
+                        "name": "東京スカイツリー"
+                    },
+                    "lat": 35.7102575202,
+                    "lng": 139.8107804551,
+                    "genre": {
+                        "name": "カフェ・スイーツ",
+                        "catch": "1979年から愛される海外展開もする甘味処",
+                        "code": "G014"
+                    },
+                    "budget": {
+                        "code": "B001",
+                        "name": "1501～2000円",
+                        "average": "2000円"
+                    },
+                    "catch": "創業36年！海外にも展開♪ 絶品イチゴパフェ",
+                    "capacity": 40,
+                    "access": "東京スカイツリー駅正面からすぐ押上駅からすぐ",
+                    "mobile_access": "東京ｽｶｲﾂﾘｰ駅からすぐ",
+                    "urls": {
+                        "pc": "https://www.hotpepper.jp/strJ003451129/?vos=nhppalsa000016"
+                    },
+                    "photo": {
+                        "pc": {
+                            "l": "https://imgfp.hotp.jp/IMGH/42/24/P039794224/P039794224_238.jpg",
+                            "m": "https://imgfp.hotp.jp/IMGH/42/24/P039794224/P039794224_168.jpg",
+                            "s": "https://imgfp.hotp.jp/IMGH/42/24/P039794224/P039794224_58_s.jpg"
+                        },
+                        "mobile": {
+                            "l": "https://imgfp.hotp.jp/IMGH/42/24/P039794224/P039794224_168.jpg",
+                            "s": "https://imgfp.hotp.jp/IMGH/42/24/P039794224/P039794224_100.jpg"
+                        }
+                    },
+                    "open": "月～日、祝日、祝前日: 10:00～21:00 （料理L.O. 20:00 ドリンクL.O. 20:30）",
+                    "close": "なし",
+                    "party_capacity": 80,
+                    "other_memo": "",
+                    "shop_detail_memo": "",
+                    "budget_memo": "",
+                    "wedding": "",
+                    "course": "あり",
+                    "free_drink": "なし",
+                    "free_food": "なし",
+                    "private_room": "なし",
+                    "horigotatsu": "なし",
+                    "tatami": "なし",
+                    "card": "利用可",
+                    "non_smoking": "全面禁煙",
+                    "charter": "貸切不可",
+                    "parking": "あり",
+                    "barrier_free": "あり",
+                    "show": "なし",
+                    "karaoke": "なし",
+                    "band": "不可",
+                    "tv": "なし",
+                    "lunch": "あり",
+                    "midnight": "営業していない",
+                    "english": "なし",
+                    "pet": "不可",
+                    "child": "お子様連れ歓迎",
+                    "wifi": "あり",
+                    "coupon_urls": {
+                        "pc": "https://www.hotpepper.jp/strJ003451129/map/?vos=nhppalsa000016",
+                        "sp": "https://www.hotpepper.jp/strJ003451129/scoupon/?vos=nhppalsa000016"
                     }
                 },
-                "other_memo": "",
-                "shop_detail_memo": "",
-                "budget_memo": ""
-            },
-            {
-                "id": "J001000856",
-                "name": "クアアイナ KUA `AINA 東京スカイツリータウン ソラマチ店",
-                "address": "東京都墨田区押上１－１－２東京スカイツリータウン・ソラマチ1F",
-                "lat": 35.7102705841,
-                "lng": 139.8111443126,
-                "genre": {
-                    "name": "カフェ・スイーツ",
-                    "catch": "グルメバーガー＆サンドウィッチレストラン"
-                },
-                "catch": "",
-                "access": "押上駅から徒歩４分",
-                "urls": {
-                    "pc": "https://www.hotpepper.jp/strJ001000856/?vos=nhppalsa000016"
-                },
-                "photo": {
-                    "pc": {
-                        "l": "https://imgfp.hotp.jp/IMGH/29/45/P001072945/P001072945_238.jpg",
-                        "m": "https://imgfp.hotp.jp/IMGH/29/45/P001072945/P001072945_168.jpg",
-                        "s": "https://imgfp.hotp.jp/IMGH/29/45/P001072945/P001072945_58_s.jpg"
+                {
+                    "id": "J001000856",
+                    "name": "クアアイナ KUA `AINA 東京スカイツリータウン ソラマチ店",
+                    "logo_image": "https://imgfp.hotp.jp/IMGH/29/46/P001072946/P001072946_69.jpg",
+                    "name_kana": "くああいな　とうきょうすかいつりーたうん　そらまちてん",
+                    "address": "東京都墨田区押上１－１－２東京スカイツリータウン・ソラマチ1F",
+                    "station_name": "押上",
+                    "ktai_coupon": 1,
+                    "large_service_area": {
+                        "code": "SS10",
+                        "name": "関東"
+                    },
+                    "service_area": {
+                        "code": "SA11",
+                        "name": "東京"
+                    },
+                    "large_area": {
+                        "code": "Z011",
+                        "name": "東京"
+                    },
+                    "middle_area": {
+                        "code": "Y017",
+                        "name": "錦糸町・浅草橋・両国・亀戸"
+                    },
+                    "small_area": {
+                        "code": "XA3X",
+                        "name": "押上"
+                    },
+                    "lat": 35.7102705841,
+                    "lng": 139.8111443126,
+                    "genre": {
+                        "name": "カフェ・スイーツ",
+                        "catch": "グルメバーガー＆サンドウィッチレストラン",
+                        "code": "G014"
+                    },
+                    "budget": {
+                        "code": "B001",
+                        "name": "1501～2000円",
+                        "average": "1000円"
+                    },
+                    "catch": "",
+                    "capacity": 50,
+                    "access": "押上駅から徒歩４分",
+                    "mobile_access": "押上駅から徒歩4分",
+                    "urls": {
+                        "pc": "https://www.hotpepper.jp/strJ001000856/?vos=nhppalsa000016"
+                    },
+                    "photo": {
+                        "pc": {
+                            "l": "https://imgfp.hotp.jp/IMGH/29/45/P001072945/P001072945_238.jpg",
+                            "m": "https://imgfp.hotp.jp/IMGH/29/45/P001072945/P001072945_168.jpg",
+                            "s": "https://imgfp.hotp.jp/IMGH/29/45/P001072945/P001072945_58_s.jpg"
+                        },
+                        "mobile": {
+                            "l": "https://imgfp.hotp.jp/IMGH/29/45/P001072945/P001072945_168.jpg",
+                            "s": "https://imgfp.hotp.jp/IMGH/29/45/P001072945/P001072945_100.jpg"
+                        }
+                    },
+                    "open": "月～日、祝日、祝前日: 10:00～22:00 （料理L.O. 21:45 ドリンクL.O. 22:00）",
+                    "close": "なし（年末年始の営業につきましては店舗までお問い合わせ下さい。）",
+                    "party_capacity": "",
+                    "other_memo": "",
+                    "shop_detail_memo": "",
+                    "budget_memo": "",
+                    "wedding": "",
+                    "free_drink": "なし",
+                    "free_food": "なし",
+                    "private_room": "なし",
+                    "horigotatsu": "なし",
+                    "tatami": "なし",
+                    "card": "利用不可",
+                    "non_smoking": "全面禁煙",
+                    "charter": "貸切不可",
+                    "parking": "なし",
+                    "barrier_free": "なし",
+                    "show": "なし",
+                    "karaoke": "なし",
+                    "band": "不可",
+                    "tv": "なし",
+                    "lunch": "あり",
+                    "midnight": "営業していない",
+                    "english": "あり",
+                    "pet": "不可",
+                    "child": "お子様連れ歓迎",
+                    "wifi": "未確認",
+                    "coupon_urls": {
+                        "pc": "https://www.hotpepper.jp/strJ001000856/map/?vos=nhppalsa000016",
+                        "sp": "https://www.hotpepper.jp/strJ001000856/scoupon/?vos=nhppalsa000016"
                     }
                 },
-                "other_memo": "",
-                "shop_detail_memo": "",
-                "budget_memo": ""
-            },
-            {
-                "id": "J001000917",
-                "name": "宮武讃岐うどん スカイツリータウン ソラマチ店",
-                "address": "東京都墨田区押上１‐１‐２　東京ソラマチ３F",
-                "lat": 35.7102705841,
-                "lng": 139.8111443126,
-                "genre": {
-                    "name": "和食",
-                    "catch": "讃岐うどん"
-                },
-                "catch": "",
-                "access": "東武伊勢崎線とうきょうスカイツリー駅 徒歩1分／都営浅草線押上駅B3番出口 徒歩1分",
-                "urls": {
-                    "pc": "https://www.hotpepper.jp/strJ001000917/?vos=nhppalsa000016"
-                },
-                "photo": {
-                    "pc": {
-                        "l": "https://imgfp.hotp.jp/IMGH/84/24/P010478424/P010478424_238.jpg",
-                        "m": "https://imgfp.hotp.jp/IMGH/84/24/P010478424/P010478424_168.jpg",
-                        "s": "https://imgfp.hotp.jp/IMGH/84/24/P010478424/P010478424_58_s.jpg"
+                {
+                    "id": "J001000917",
+                    "name": "宮武讃岐うどん スカイツリータウン ソラマチ店",
+                    "logo_image": "https://imgfp.hotp.jp/IMGH/48/28/P010474828/P010474828_69.jpg",
+                    "name_kana": "みやたけさぬきうどん　すかいつりーたうんそらまちてん",
+                    "address": "東京都墨田区押上１‐１‐２　東京ソラマチ３F",
+                    "station_name": "とうきょうスカイツリー",
+                    "ktai_coupon": 1,
+                    "large_service_area": {
+                        "code": "SS10",
+                        "name": "関東"
+                    },
+                    "service_area": {
+                        "code": "SA11",
+                        "name": "東京"
+                    },
+                    "large_area": {
+                        "code": "Z011",
+                        "name": "東京"
+                    },
+                    "middle_area": {
+                        "code": "Y017",
+                        "name": "錦糸町・浅草橋・両国・亀戸"
+                    },
+                    "small_area": {
+                        "code": "XA3Y",
+                        "name": "東京スカイツリー"
+                    },
+                    "lat": 35.7102705841,
+                    "lng": 139.8111443126,
+                    "genre": {
+                        "name": "和食",
+                        "catch": "讃岐うどん",
+                        "code": "G004"
+                    },
+                    "budget": {
+                        "code": "B001",
+                        "name": "1501～2000円",
+                        "average": "600円"
+                    },
+                    "catch": "",
+                    "capacity": 18,
+                    "access": "東武伊勢崎線とうきょうスカイツリー駅 徒歩1分／都営浅草線押上駅B3番出口 徒歩1分",
+                    "mobile_access": "とうきょうｽｶｲﾂﾘｰ駅 徒歩1分/押上駅 徒歩1分",
+                    "urls": {
+                        "pc": "https://www.hotpepper.jp/strJ001000917/?vos=nhppalsa000016"
+                    },
+                    "photo": {
+                        "pc": {
+                            "l": "https://imgfp.hotp.jp/IMGH/84/24/P010478424/P010478424_238.jpg",
+                            "m": "https://imgfp.hotp.jp/IMGH/84/24/P010478424/P010478424_168.jpg",
+                            "s": "https://imgfp.hotp.jp/IMGH/84/24/P010478424/P010478424_58_s.jpg"
+                        },
+                        "mobile": {
+                            "l": "https://imgfp.hotp.jp/IMGH/84/24/P010478424/P010478424_168.jpg",
+                            "s": "https://imgfp.hotp.jp/IMGH/84/24/P010478424/P010478424_100.jpg"
+                        }
+                    },
+                    "open": "月～日、祝日、祝前日: 10:00～21:00 （料理L.O. 20:45 ドリンクL.O. 20:45）",
+                    "close": "なし",
+                    "party_capacity": "",
+                    "other_memo": "",
+                    "shop_detail_memo": "",
+                    "budget_memo": "",
+                    "wedding": "",
+                    "free_drink": "なし",
+                    "free_food": "なし",
+                    "private_room": "なし",
+                    "horigotatsu": "なし",
+                    "tatami": "なし",
+                    "card": "利用可",
+                    "non_smoking": "全面禁煙",
+                    "charter": "貸切不可",
+                    "parking": "あり ：東京ミッドタウン駐車場あり（有料）",
+                    "barrier_free": "あり",
+                    "show": "なし",
+                    "karaoke": "なし",
+                    "band": "不可",
+                    "tv": "なし",
+                    "lunch": "あり",
+                    "midnight": "営業していない",
+                    "english": "なし",
+                    "pet": "不可",
+                    "child": "お子様連れ歓迎",
+                    "wifi": "未確認",
+                    "coupon_urls": {
+                        "pc": "https://www.hotpepper.jp/strJ001000917/map/?vos=nhppalsa000016",
+                        "sp": "https://www.hotpepper.jp/strJ001000917/scoupon/?vos=nhppalsa000016"
                     }
                 },
-                "other_memo": "",
-                "shop_detail_memo": "",
-                "budget_memo": ""
-            },
-            {
-                "id": "J001144284",
-                "name": "焼肉ドラゴ 押上店",
-                "address": "東京都墨田区押上２-4-9",
-                "lat": 35.7109121594,
-                "lng": 139.810431847,
-                "genre": {
-                    "name": "焼肉・ホルモン",
-                    "catch": "お肉をお腹いっぱい食べたいときはドラゴへ"
-                },
-                "catch": "ドラゴ＝迫力メニュー！ 脅威の提供スピード！",
-                "access": "押上駅より徒歩２分、東京スカイツリー駅より徒歩３０秒",
-                "urls": {
-                    "pc": "https://www.hotpepper.jp/strJ001144284/?vos=nhppalsa000016"
-                },
-                "photo": {
-                    "pc": {
-                        "l": "https://imgfp.hotp.jp/IMGH/11/55/P024271155/P024271155_238.jpg",
-                        "m": "https://imgfp.hotp.jp/IMGH/11/55/P024271155/P024271155_168.jpg",
-                        "s": "https://imgfp.hotp.jp/IMGH/11/55/P024271155/P024271155_58_s.jpg"
+                {
+                    "id": "J001144284",
+                    "name": "焼肉ドラゴ 押上店",
+                    "logo_image": "https://imgfp.hotp.jp/SYS/cmn/images/common/diary/custom/m30_img_noimage.gif",
+                    "name_kana": "ヤキニクドラゴ　オシアゲテン",
+                    "address": "東京都墨田区押上２-4-9",
+                    "station_name": "とうきょうスカイツリー",
+                    "ktai_coupon": 0,
+                    "large_service_area": {
+                        "code": "SS10",
+                        "name": "関東"
+                    },
+                    "service_area": {
+                        "code": "SA11",
+                        "name": "東京"
+                    },
+                    "large_area": {
+                        "code": "Z011",
+                        "name": "東京"
+                    },
+                    "middle_area": {
+                        "code": "Y017",
+                        "name": "錦糸町・浅草橋・両国・亀戸"
+                    },
+                    "small_area": {
+                        "code": "XA3X",
+                        "name": "押上"
+                    },
+                    "lat": 35.7109121594,
+                    "lng": 139.810431847,
+                    "genre": {
+                        "name": "焼肉・ホルモン",
+                        "catch": "お肉をお腹いっぱい食べたいときはドラゴへ",
+                        "code": "G008"
+                    },
+                    "budget": {
+                        "code": "B003",
+                        "name": "3001～4000円",
+                        "average": "3500円(通常)/4000円(宴会時)/900円(ランチ時)"
+                    },
+                    "catch": "ドラゴ＝迫力メニュー！ 脅威の提供スピード！",
+                    "capacity": 52,
+                    "access": "押上駅より徒歩２分、東京スカイツリー駅より徒歩３０秒",
+                    "mobile_access": "押上駅 徒歩2分､東京ｽｶｲﾂﾘｰ駅 徒歩30秒",
+                    "urls": {
+                        "pc": "https://www.hotpepper.jp/strJ001144284/?vos=nhppalsa000016"
+                    },
+                    "photo": {
+                        "pc": {
+                            "l": "https://imgfp.hotp.jp/IMGH/11/55/P024271155/P024271155_238.jpg",
+                            "m": "https://imgfp.hotp.jp/IMGH/11/55/P024271155/P024271155_168.jpg",
+                            "s": "https://imgfp.hotp.jp/IMGH/11/55/P024271155/P024271155_58_s.jpg"
+                        },
+                        "mobile": {
+                            "l": "https://imgfp.hotp.jp/IMGH/11/55/P024271155/P024271155_168.jpg",
+                            "s": "https://imgfp.hotp.jp/IMGH/11/55/P024271155/P024271155_100.jpg"
+                        }
+                    },
+                    "open": "火～土、祝前日: 11:30～14:0017:00～翌0:00 （料理L.O. 23:00 ドリンクL.O. 23:00）日、祝日: 11:30～14:0017:00～23:00 （料理L.O. 22:00 ドリンクL.O. 22:00）",
+                    "close": "月",
+                    "party_capacity": 60,
+                    "other_memo": "",
+                    "shop_detail_memo": "コースもございます！誕生日や記念日、女子会にもぜひご利用ください♪",
+                    "budget_memo": "",
+                    "wedding": "ご相談ください",
+                    "course": "あり",
+                    "free_drink": "あり ：1500円（生ビール有は2000円）",
+                    "free_food": "なし ：ございません",
+                    "private_room": "あり ：テーブル個室あり（1室/2名～4名様用） ",
+                    "horigotatsu": "あり ：お寛ぎください",
+                    "tatami": "あり ：ございません",
+                    "card": "利用可",
+                    "non_smoking": "全面禁煙",
+                    "charter": "貸切可 ：26名様 ～60名様 ",
+                    "parking": "なし",
+                    "barrier_free": "なし",
+                    "show": "なし",
+                    "karaoke": "なし",
+                    "band": "不可",
+                    "tv": "あり",
+                    "lunch": "あり",
+                    "midnight": "営業していない",
+                    "english": "あり",
+                    "pet": "不可",
+                    "child": "お子様連れ歓迎 ：乳児からOK",
+                    "wifi": "なし",
+                    "coupon_urls": {
+                        "pc": "https://www.hotpepper.jp/strJ001144284/map/?vos=nhppalsa000016",
+                        "sp": "https://www.hotpepper.jp/strJ001144284/scoupon/?vos=nhppalsa000016"
                     }
                 },
-                "other_memo": "",
-                "shop_detail_memo": "コースもございます！誕生日や記念日、女子会にもぜひご利用ください♪",
-                "budget_memo": ""
-            },
-            {
-                "id": "J003784880",
-                "name": "窯焼きバルカフェ らんぷ+k",
-                "address": "東京都墨田区業平１-22-5 102",
-                "lat": 35.7092870755,
-                "lng": 139.8108452111,
-                "genre": {
-                    "name": "イタリアン・フレンチ",
-                    "catch": "窯焼きと発酵料理が自慢◎"
-                },
-                "catch": "特別な日を彩るプレート♪ オシャレなテラス席◎",
-                "access": "半蔵門線・浅草線「押上駅」A2出口より徒歩3分。とうきょうスカイツリー駅から199m",
-                "urls": {
-                    "pc": "https://www.hotpepper.jp/strJ003784880/?vos=nhppalsa000016"
-                },
-                "photo": {
-                    "pc": {
-                        "l": "https://imgfp.hotp.jp/IMGH/32/80/P044183280/P044183280_238.jpg",
-                        "m": "https://imgfp.hotp.jp/IMGH/32/80/P044183280/P044183280_168.jpg",
-                        "s": "https://imgfp.hotp.jp/IMGH/32/80/P044183280/P044183280_58_s.jpg"
+                {
+                    "id": "J003784880",
+                    "name": "窯焼きバルカフェ らんぷ+k",
+                    "logo_image": "https://imgfp.hotp.jp/SYS/cmn/images/common/diary/custom/m30_img_noimage.gif",
+                    "name_kana": "かまやきバルカフェ　らんぷけー",
+                    "address": "東京都墨田区業平１-22-5 102",
+                    "station_name": "押上",
+                    "ktai_coupon": 1,
+                    "large_service_area": {
+                        "code": "SS10",
+                        "name": "関東"
+                    },
+                    "service_area": {
+                        "code": "SA11",
+                        "name": "東京"
+                    },
+                    "large_area": {
+                        "code": "Z011",
+                        "name": "東京"
+                    },
+                    "middle_area": {
+                        "code": "Y017",
+                        "name": "錦糸町・浅草橋・両国・亀戸"
+                    },
+                    "small_area": {
+                        "code": "XA3X",
+                        "name": "押上"
+                    },
+                    "lat": 35.7092870755,
+                    "lng": 139.8108452111,
+                    "genre": {
+                        "name": "イタリアン・フレンチ",
+                        "catch": "窯焼きと発酵料理が自慢◎",
+                        "code": "G006"
+                    },
+                    "budget": {
+                        "code": "B003",
+                        "name": "3001～4000円",
+                        "average": "ランチ1000～2,000円、ディナー3,000円～4,000円"
+                    },
+                    "catch": "特別な日を彩るプレート♪ オシャレなテラス席◎",
+                    "capacity": 30,
+                    "access": "半蔵門線・浅草線「押上駅」A2出口より徒歩3分。とうきょうスカイツリー駅から199m",
+                    "mobile_access": "半蔵門線･浅草線｢押上駅｣A2出口より徒歩3分 ",
+                    "urls": {
+                        "pc": "https://www.hotpepper.jp/strJ003784880/?vos=nhppalsa000016"
+                    },
+                    "photo": {
+                        "pc": {
+                            "l": "https://imgfp.hotp.jp/IMGH/32/80/P044183280/P044183280_238.jpg",
+                            "m": "https://imgfp.hotp.jp/IMGH/32/80/P044183280/P044183280_168.jpg",
+                            "s": "https://imgfp.hotp.jp/IMGH/32/80/P044183280/P044183280_58_s.jpg"
+                        },
+                        "mobile": {
+                            "l": "https://imgfp.hotp.jp/IMGH/32/80/P044183280/P044183280_168.jpg",
+                            "s": "https://imgfp.hotp.jp/IMGH/32/80/P044183280/P044183280_100.jpg"
+                        }
+                    },
+                    "open": "月、水、木、祝日: 11:30～14:00 （料理L.O. 13:00 ドリンクL.O. 13:30）17:00～23:00 （料理L.O. 22:00 ドリンクL.O. 22:30）金～日: 11:30～14:00 （料理L.O. 13:00 ドリンクL.O. 13:30）17:00～翌0:00 （料理L.O. 23:00 ドリンクL.O. 23:30）",
+                    "close": "火",
+                    "party_capacity": 30,
+                    "other_memo": "",
+                    "shop_detail_memo": "",
+                    "budget_memo": "",
+                    "wedding": "",
+                    "course": "あり",
+                    "free_drink": "あり",
+                    "free_food": "なし",
+                    "private_room": "なし",
+                    "horigotatsu": "なし",
+                    "tatami": "なし",
+                    "card": "利用可",
+                    "non_smoking": "全面禁煙",
+                    "charter": "貸切可 ：ご相談ください。",
+                    "parking": "なし",
+                    "barrier_free": "なし",
+                    "show": "なし",
+                    "karaoke": "なし",
+                    "band": "不可",
+                    "tv": "なし",
+                    "lunch": "なし",
+                    "midnight": "営業している",
+                    "english": "なし",
+                    "pet": "可",
+                    "child": "お子様連れ歓迎",
+                    "wifi": "なし",
+                    "coupon_urls": {
+                        "pc": "https://www.hotpepper.jp/strJ003784880/map/?vos=nhppalsa000016",
+                        "sp": "https://www.hotpepper.jp/strJ003784880/scoupon/?vos=nhppalsa000016"
                     }
                 },
-                "other_memo": "",
-                "shop_detail_memo": "",
-                "budget_memo": ""
-            },
-            {
-                "id": "J003297592",
-                "name": "SRY+IZAKAYA French Italian Creation 東京スカイツリー駅前店",
-                "address": "東京都墨田区押上２-1-1 107",
-                "lat": 35.7107268682,
-                "lng": 139.8091569625,
-                "genre": {
-                    "name": "イタリアン・フレンチ",
-                    "catch": "お箸でカジュアルに楽しめる創作フレンチ"
-                },
-                "catch": "気軽にフレンチを満喫 人気のラクレットチーズ",
-                "access": "東武伊勢崎線とうきょうスカイツリー駅東口より徒歩約1分",
-                "urls": {
-                    "pc": "https://www.hotpepper.jp/strJ003297592/?vos=nhppalsa000016"
-                },
-                "photo": {
-                    "pc": {
-                        "l": "https://imgfp.hotp.jp/IMGH/24/42/P041252442/P041252442_238.jpg",
-                        "m": "https://imgfp.hotp.jp/IMGH/24/42/P041252442/P041252442_168.jpg",
-                        "s": "https://imgfp.hotp.jp/IMGH/24/42/P041252442/P041252442_58_s.jpg"
+                {
+                    "id": "J003297592",
+                    "name": "SRY+IZAKAYA French Italian Creation 東京スカイツリー駅前店",
+                    "logo_image": "https://imgfp.hotp.jp/IMGH/90/95/P039669095/P039669095_69.jpg",
+                    "name_kana": "スライ　イザカヤ　フレンチ　イタリアン　クリエーション",
+                    "address": "東京都墨田区押上２-1-1 107",
+                    "station_name": "とうきょうスカイツリー",
+                    "ktai_coupon": 0,
+                    "large_service_area": {
+                        "code": "SS10",
+                        "name": "関東"
+                    },
+                    "service_area": {
+                        "code": "SA11",
+                        "name": "東京"
+                    },
+                    "large_area": {
+                        "code": "Z011",
+                        "name": "東京"
+                    },
+                    "middle_area": {
+                        "code": "Y017",
+                        "name": "錦糸町・浅草橋・両国・亀戸"
+                    },
+                    "small_area": {
+                        "code": "XA3X",
+                        "name": "押上"
+                    },
+                    "lat": 35.7107268682,
+                    "lng": 139.8091569625,
+                    "genre": {
+                        "name": "イタリアン・フレンチ",
+                        "catch": "お箸でカジュアルに楽しめる創作フレンチ",
+                        "code": "G006"
+                    },
+                    "budget": {
+                        "code": "B008",
+                        "name": "4001～5000円",
+                        "average": "Lunch：～2,000円　Dinner：～5,000円"
+                    },
+                    "catch": "気軽にフレンチを満喫 人気のラクレットチーズ",
+                    "capacity": 25,
+                    "access": "東武伊勢崎線とうきょうスカイツリー駅東口より徒歩約1分",
+                    "mobile_access": "東武伊勢崎線とうきょうｽｶｲﾂﾘｰ駅東口徒歩約1分",
+                    "urls": {
+                        "pc": "https://www.hotpepper.jp/strJ003297592/?vos=nhppalsa000016"
+                    },
+                    "photo": {
+                        "pc": {
+                            "l": "https://imgfp.hotp.jp/IMGH/24/42/P041252442/P041252442_238.jpg",
+                            "m": "https://imgfp.hotp.jp/IMGH/24/42/P041252442/P041252442_168.jpg",
+                            "s": "https://imgfp.hotp.jp/IMGH/24/42/P041252442/P041252442_58_s.jpg"
+                        },
+                        "mobile": {
+                            "l": "https://imgfp.hotp.jp/IMGH/24/42/P041252442/P041252442_168.jpg",
+                            "s": "https://imgfp.hotp.jp/IMGH/24/42/P041252442/P041252442_100.jpg"
+                        }
+                    },
+                    "open": "月～日、祝日、祝前日: 11:00～15:00 （料理L.O. 14:30 ドリンクL.O. 14:30）17:00～23:00 （料理L.O. 22:00 ドリンクL.O. 22:00）",
+                    "close": "不定休とさせていただいております。",
+                    "party_capacity": 35,
+                    "other_memo": "お席のご指定はいただいておりませんのでご了承くださいませ。",
+                    "shop_detail_memo": "お席のご指定につきましては、ご要望に添えない場合がございます。ご了承下さいませ。",
+                    "budget_memo": "お通し代：440円",
+                    "wedding": "",
+                    "course": "あり",
+                    "free_drink": "あり",
+                    "free_food": "なし",
+                    "private_room": "あり ：半個室（最大12名様まで）",
+                    "horigotatsu": "なし",
+                    "tatami": "なし",
+                    "card": "利用可",
+                    "non_smoking": "全面禁煙",
+                    "charter": "貸切可 ：ご相談ください。",
+                    "parking": "なし ：近くにパーキングあり",
+                    "barrier_free": "なし",
+                    "show": "なし",
+                    "karaoke": "なし",
+                    "band": "不可",
+                    "tv": "なし",
+                    "lunch": "あり",
+                    "midnight": "営業していない",
+                    "english": "なし",
+                    "pet": "不可",
+                    "child": "お子様連れOK",
+                    "wifi": "なし",
+                    "coupon_urls": {
+                        "pc": "https://www.hotpepper.jp/strJ003297592/map/?vos=nhppalsa000016",
+                        "sp": "https://www.hotpepper.jp/strJ003297592/scoupon/?vos=nhppalsa000016"
                     }
-                },
-                "other_memo": "お席のご指定はいただいておりませんのでご了承くださいませ。",
-                "shop_detail_memo": "お席のご指定につきましては、ご要望に添えない場合がございます。ご了承下さいませ。",
-                "budget_memo": "お通し代：440円"
-            }
-        ]
+                }
+            ]
+        }
     }
 }
