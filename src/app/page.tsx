@@ -12,6 +12,8 @@ export default function Home() {
   const skyState = sepHour(hour); //時間帯を取得
   const skyTheme = sepSkyTheme(skyState); //時間帯のテーマを取得
 
+
+
   return (
     <div className={`h-screen flex flex-col ${skyTheme}`}>
       <div className="my-8 md:my-12"><SendMessage skyState={skyState} /></div>
