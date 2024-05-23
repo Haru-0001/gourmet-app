@@ -1,21 +1,14 @@
 "use client"
-import { createCookies } from "@/api/cookies/createCookies";
 import { Slider } from "@/components/ui/slider"
-import { useEffect} from "react";
 import jsCookie from "js-cookie"
 
+//Cookieに値を保存
 const onValueChange = (value: number[]) => {
     jsCookie.set("range", value[0].toString());
-    const rangeNum =  jsCookie.get("range");
-    console.log("range",rangeNum);
+    console.log("range", jsCookie.get("range"));
 }
 
 const RangeSlider = () => {
-    useEffect(() => {
-        createCookies()
-        const rangeNum = jsCookie.get("range");
-        console.log("range", rangeNum);
-    }, []);
     return (
         <div className="relative mb-6 w-9/12">
             <Slider defaultValue={[2]} min={1} max={5} step={1} onValueChange={onValueChange}/>

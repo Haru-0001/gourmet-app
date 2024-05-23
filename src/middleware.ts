@@ -6,7 +6,8 @@ export function middleware(req : NextRequest) {
     const currentTime = new Date().getHours();
     const response = NextResponse.next();
     response.cookies.set("currentTime", currentTime.toString());
-    console.log("middleware", response.cookies.getAll());
+    response.cookies.set("range", "2");
+    console.log("cookieData", response.cookies.getAll());
     console.log("middlewareURL:", req.nextUrl.href);
     return response;
 }
