@@ -4,7 +4,6 @@ import { GetLocalRestaurant } from "@/types/GetLocalRestaurant";
 import {useEffect, useState } from "react";
 import { getLocation } from "@/api/location/getLocation";
 import { getRestaurants } from "@/api/restaurants/default/getRestaurants";
-import { Restaurant } from "@/types/Restaurant";
 import { RestaurantCard } from "@/types/RestaurantCard";
 import { cardMapper } from "@/features/restaurant/card/cardMapper";
 import jsCookie from "js-cookie";
