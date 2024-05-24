@@ -11,7 +11,6 @@ import jsCookie from "js-cookie";
 
 // ユーザーの位置情報を取得し、その位置情報を元にレストランのデータを取得する
 export default function result() {
-    const [restaurants, setRestaurant] = useState<Restaurant>();
     const [cards, setCards] = useState<RestaurantCard[]>([]);
 
     //useEffectを使用してgetUserRestaurantsを実行
@@ -26,7 +25,6 @@ export default function result() {
                     longitude: location.longitude
                 }
                 const response = await getRestaurants(params)
-                setRestaurant(response)
                 const restaurantCards = cardMapper(response)
                 setCards(restaurantCards)
             }
