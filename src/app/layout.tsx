@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Noto_Sans_JP } from 'next/font/google'
+import { Yusei_Magic } from "next/font/google";
 
 //フォントの設定
-const nsJpFont = Noto_Sans_JP({
+const ymFont = Yusei_Magic({
   preload: false,
-  variable: "--font-noto-sans-jp",
+  variable: "--font-yusei-magic",
+  weight: "400"
 });
 
 //メタデータの設定
@@ -18,7 +19,7 @@ export const metadata: Metadata = {
 export default function RootLayout({children,}: Readonly<{ children: React.ReactNode;}>){
   return (
     <html lang="ja">
-      <body className={`${nsJpFont.className}`}>
+      <body className={`${ymFont.className}`}>
         {children}
       </body>
     </html>
