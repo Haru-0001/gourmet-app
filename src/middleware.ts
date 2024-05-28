@@ -3,12 +3,13 @@ import type { NextRequest } from "next/server";
 
 //レンダリング前に時刻を取得してCookieに保存
 export function middleware(req : NextRequest) {
-    const currentTime = new Date().getHours();
+    //JSTでhourを取得
+    const currentTime = new Date().toLocaleString('en-GB', { timeZone: 'JST' , hour: "numeric"});
     const response = NextResponse.next();
     response.cookies.set("currentTime", currentTime.toString());
     response.cookies.set("range", "2");
-    console.log("cookieData", response.cookies.getAll());
     console.log("middlewareURL:", req.nextUrl.href);
+    console.log("cookieData", response.cookies.getAll());
     return response;
 }
 
