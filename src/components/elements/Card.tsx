@@ -37,9 +37,9 @@ const Card = () =>{
             <div key={restaurant.key} className="w-9/12 my-4 flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-xl hover:bg-gray-100 md:flex-row md:max-w-2xl md:h-60">
             <img className="object-cover w-full rounded-t-lg h-56 md:h-full md:w-48 md:rounded-none md:rounded-s-lg md:aspect-square" src={restaurant.photo}/>
                 <div className="flex flex-col justify-between h-full p-4 space-y-2">
-                    <h3 className="basis-1/2 text-2xl font-bold tracking-tight text-gray-900 overflow-hidden">{restaurant.title}</h3>
-                    <p className="basis-1/4 font-normal text-gray-700 line-clamp-2">{restaurant.pr}</p>
-                    <p className="basis-1/4 font-normal text-sm text-gray-500 line-clamp-2 md:pt-1">{restaurant.access}</p>
+                    <h3 className="basis-1/2 text-2xl font-bold tracking-tight text-gray-900 md:overflow-hidden">{restaurant.title}</h3>
+                    <p className="basis-1/4 font-normal text-gray-700 md:line-clamp-2">{restaurant.pr}</p>
+                    <p className="basis-1/4 font-normal text-sm text-gray-500 md:line-clamp-2 md:pt-1">{restaurant.access}</p>
                 </div>
             </div>
         ))
