@@ -8,7 +8,7 @@ const nsJpFont = Noto_Sans_JP({
 
 export default function result() {
     return (
-        <div className={`${nsJpFont.className} flex justify-center`}>
+        <div className={`${nsJpFont.className} flex justify-center mt-12`}>
             <Card />
         </div>
     )
