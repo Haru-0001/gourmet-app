@@ -1,5 +1,5 @@
 'use client'
-import { Card } from "@/components/elements/Card";
+import { Card } from "@/components/modules/Card";
 import { Noto_Sans_JP } from 'next/font/google';
 const nsJpFont = Noto_Sans_JP({
     preload: false,

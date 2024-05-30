@@ -1,10 +1,10 @@
-import { FirstButton } from "@/components/elements/FirstButton";
-import { SendMessage } from "@/components/elements/messages/SendMessage";
-import { PromptMessage } from "@/components/elements/messages/PromptMessage";
-import { RangeSlider } from "@/components/dataInput/RangeSlider";
+import { FirstButton } from "@/components/elements/button/FirstButton";
+import { SendMessage } from "@/components/elements/message/SendMessage";
+import { PromptMessage } from "@/components/elements/message/PromptMessage";
+import { RangeSlider } from "@/components/modules/RangeSlider";
 import { cookies } from "next/headers";
 import { sepHour } from "@/features/time/sepHour";
-import { sepSkyTheme } from "@/components/layouts/theme/sepSkyTheme";
+import { sepSkyTheme } from "@/features/theme/sepSkyTheme";
 
 export default function Home() {
   //Cookieから時間を取得
