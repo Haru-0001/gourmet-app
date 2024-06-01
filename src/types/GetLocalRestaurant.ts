@@ -1,8 +1,8 @@
-interface GetLocalRestaurant  {
+import { Coordinate } from '@/types/coordinate'
+
+type GetLocalRestaurant = Coordinate & {
     start: number,
-    range: number, //今後の実装目標 1 | 2 | 3 | 4 | 5,
-    latitude: number,
-    longitude: number
+    range: 1 | 2 | 3 | 4 | 5
 }
 
 export type { GetLocalRestaurant }
