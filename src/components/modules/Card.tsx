@@ -11,21 +11,21 @@ import jsCookie from "js-cookie";
 const Card = () =>{
     const [cards, setCards] = useState<RestaurantCard[]>([]);
 
+    const getUserRestaurants = async () => {
+        const location = await getLocation()
+        const range = Number(jsCookie.get("range")) as GetLocalRestaurant["range"]
+        const params: GetLocalRestaurant = {
+            start: 1,
+            range: range,
+            latitude: location.latitude,
+            longitude: location.longitude
+        }
+        const response = await getRestaurants(params)
+        const restaurantCards = cardMapper(response)
+        setCards(restaurantCards)
+    }
     //useEffectを使用してgetUserRestaurantsを実行
     useEffect(() => {
-        const getUserRestaurants = async () => {
-                const location = await getLocation()
-                const range = Number(jsCookie.get("range"))
-                const params: GetLocalRestaurant = {
-                    start: 1,
-                    range: range,
-                    latitude: location.latitude,
-                    longitude: location.longitude
-                }
-                const response = await getRestaurants(params)
-                const restaurantCards = cardMapper(response)
-                setCards(restaurantCards)
-            }
         getUserRestaurants()
     }, [])
 
