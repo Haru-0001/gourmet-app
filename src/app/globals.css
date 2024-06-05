@@ -1,14 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* @layer base {
-    .sky-mode {
-    }
-
-    .night-mode {
-    }
-
-    .twilight-mode {
-    }
-} */
