@@ -1,4 +1,4 @@
-import { Coordinate } from "@/types/coordinate"
+import { Coordinate } from "@/types/Coordinate"
 
 //GeoLocationAPIを用いて位置情報を取得
 export function getLocation(): Promise<Coordinate> {
