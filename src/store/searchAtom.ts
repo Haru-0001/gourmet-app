@@ -1,5 +1,6 @@
 import {atom} from 'jotai'
 
-const rangeAtom = atom(2)
+export const rangeAtom = atom(2)
 
-export {rangeAtom}
+export const searchBoxAtom = atom('')
+
