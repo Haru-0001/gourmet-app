@@ -13,9 +13,9 @@ export default function Home() {
   return (
     <div className={`h-screen flex flex-col ${theme}`}>
       <div className="my-8 md:my-12"><SendMessage/></div>
-      <div className="mb-6 md:mb-12"><PromptMessage /></div>
-      <div className="flex justify-center"><FirstButton /></div>
-      <div className="flex justify-center mt-16"><RangeSlider /></div>
+      <div className="mb-6 md:mb-12"><PromptMessage/></div>
+      <div className="flex justify-center"><FirstButton　pathName='/result'/></div>
+      <div className="flex justify-center mt-16"><RangeSlider/></div>
     </div>
   )
 }
