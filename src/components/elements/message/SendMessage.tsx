@@ -1,17 +1,16 @@
-import { messageTime, themeTime } from "@/features/time/sepHour";
+import { messageTime } from "@/features/time/sepHour";
 import { themeColor, themeMessage } from "@/store/themes";
-import { MessageTimeType, ThemeTimeType} from "@/types/ThemeTime";
+import { MessageTimeType, ThemeTimeType } from "@/types/ThemeTime";
 
 //時間帯によってメッセージを変えるコンポーネント
-const SendMessage = () => {
+const SendMessage = (value:{time:string}) => {
     const timeMessage = messageTime() as MessageTimeType;
-    const timeTheme = themeTime() as ThemeTimeType;
-
     const message = themeMessage[timeMessage].firstMessage;
-    const theme = themeColor[timeTheme].primaryText;
+    const time = value.time as ThemeTimeType;
+    const textTheme = themeColor[time].primaryText;
 
     return (
-        <p className={`text-4xl text-center md:text-6xl ${theme}`}
+        <p className={`text-4xl text-center md:text-6xl ${textTheme}`}
             dangerouslySetInnerHTML={{ __html: message }}>
         </p>
     )

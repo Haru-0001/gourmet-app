@@ -22,7 +22,7 @@ const Header = () => {
                 </div>
                 <div className="my-8 space-x-12 flex justify-center">
                     <IsSliderButton />
-                    <RangeSlider />
+                    <RangeSlider time={time}/>
                 </div>
             </nav>
         </header>

@@ -5,30 +5,33 @@
     sky: {
         primary: "slate-50",
         primaryBg: "bg-sky-300",
-        primaryText: "text-slate-50",
+        primaryText: "text-blue-900",
         primaryHover: "sky-500",
-        primaryAction: "sky-500",
+        primaryAction: "bg-blue-800",
+        ring: "ring-offset-blue-600",
     },
     night: {
         primary: "slate-50",
         primaryBg: "bg-indigo-800",
-        primaryText: "text-slate-50",
+        primaryText: "text-indigo-200",
         primaryHover: "indigo-500",
-        primaryAction: "indigo-900",
+        primaryAction: "bg-indigo-950",
+        ring: "ring-offset-indigo-700",
     },
     twilight: {
         primary: "slate-50",
         primaryBg: "bg-orange-500",
-        primaryText: "text-slate-50",
+        primaryText: "text-red-900",
         primaryHover: "orange-800",
-        primaryAction: "orange-800",
+        primaryAction: "bg-red-800",
+        ring: "ring-offset-red-600",
     },
 
     secondary: "slate-800",
     secondaryBg: "bg-slate-100",
     secondaryText: "text-slate-700",
     secondaryHover: "slate-500",
-};
+    };
 
 export const themeMessage = {
     firstMessage: "ワンタップで<br />お店を探そう！",
