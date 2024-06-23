@@ -14,6 +14,7 @@ export function themeTime(): string {
     }
 }
 
+//時間を受け取り、その時間帯に合ったメッセージを返す関数
 export function messageTime(): string {
     if (hour >= 18 || hour <= 4) {
       return "night";

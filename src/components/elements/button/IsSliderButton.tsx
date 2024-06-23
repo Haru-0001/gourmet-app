@@ -1,6 +1,7 @@
 "use client"
 import { useState } from 'react';
 
+//ヘッダーのスライダーのTrue/Falseを切り替えるボタン
 const IsSliderButton = () =>{
     const [isChecked, setIsChecked] = useState(true);
 
