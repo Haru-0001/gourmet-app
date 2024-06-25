@@ -20,7 +20,7 @@ const PaginationContent = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <ul
     ref={ref}
-    className={cn("flex flex-row items-center gap-4 m-8", className)}
+    className={cn("flex flex-row items-center gap-1 my-8", className)}
     {...props}
   />
 ))
@@ -42,7 +42,7 @@ type PaginationLinkProps = {
 const PaginationLink = ({
   className,
   isActive,
-  size = "lg",
+  size = "icon",
   ...props
 }: PaginationLinkProps) => (
   <a
