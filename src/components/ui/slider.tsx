@@ -5,10 +5,15 @@ import * as SliderPrimitive from "@radix-ui/react-slider"
 import { cn } from "@/lib/utils"
 
 //shadn/uiによって自動生成されたRadixのSliderコンポーネントをカスタマイズ
+
+type ExtendedSliderProps = React.ComponentPropsWithoutRef<typeof SliderPrimitive.Root> & {
+  theme ?: { thumbTheme: string, ringTheme: string }
+};
+
 const Slider = React.forwardRef<
   React.ElementRef<typeof SliderPrimitive.Root>,
-  React.ComponentPropsWithoutRef<typeof SliderPrimitive.Root>
->(({ className, onValueChange, ...props }, ref) => {
+  ExtendedSliderProps
+>(({ className, onValueChange, theme, ...props }, ref) => {
   const [value, setValue] = React.useState([2])
 
   const handleValueChange = (value: number[]) => {
@@ -17,6 +22,7 @@ const Slider = React.forwardRef<
       onValueChange?.(value)
     }
   }
+  const setTheme = theme || { thumbTheme: "bg-slate-800", ringTheme: "ring-offset-slate-600" }
 
   return (
   <SliderPrimitive.Root
@@ -32,7 +38,7 @@ const Slider = React.forwardRef<
     <SliderPrimitive.Track className="relative h-2 w-full grow overflow-hidden rounded-full bg-slate-800/50">
       <SliderPrimitive.Range className="absolute h-full bg-slate-50" />
     </SliderPrimitive.Track>
-    <SliderPrimitive.Thumb className="block h-5 w-5 rounded-full border-2 border-slate-50 bg-blue-900 ring-offset-blue-700 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-100 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50" />
+    <SliderPrimitive.Thumb className={`block h-5 w-5 rounded-full border-2 border-slate-50 ${setTheme.thumbTheme} ${setTheme.ringTheme} transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-100 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50`} />
   </SliderPrimitive.Root>
   )
 })
