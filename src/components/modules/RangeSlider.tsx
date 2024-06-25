@@ -5,6 +5,7 @@ import { ThemeTimeType } from "@/types/ThemeTime";
 import jsCookie from "js-cookie"
 import { useAtom } from 'jotai';
 import { isSliderAtom } from '@/store/searchAtom';
+import { useEffect } from "react";
 
 //Cookieに値を保存
 const onValueChange = (value: number[]) => {
@@ -17,7 +18,8 @@ const RangeSlider = (props:{time:ThemeTimeType}) => {
     const textTheme = themeColor[time].primaryText;
     const thumbTheme = themeColor[time].primaryAction;
     const ringTheme = themeColor[time].ring;
-    const [isChecked] = useAtom(isSliderAtom);
+    const [isChecked ,setIsChecked] = useAtom(isSliderAtom);
+    useEffect(() => {setIsChecked(true)},[])
     const opacity = isChecked ? "opacity-100" : "opacity-50"; //スライダーのON/OFFをisSliderButtonで切り替えるための設定
     return (
         <div className={`relative mb-6 w-9/12 ${opacity}`}>
