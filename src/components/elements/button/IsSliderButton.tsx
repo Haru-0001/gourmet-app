@@ -1,13 +1,14 @@
 "use client"
+import { isSliderAtom } from '@/store/searchAtom';
 import { themeColor } from '@/store/themes';
 import { ThemeTimeType } from '@/types/ThemeTime';
-import { useState } from 'react';
+import { useAtom } from 'jotai';
 
 //ヘッダーのスライダーのTrue/Falseを切り替えるボタン
 const IsSliderButton = (props:{time:ThemeTimeType}) =>{
     const time = props.time;
     const theme = themeColor[time].primaryAction
-    const [isChecked, setIsChecked] = useState(true);
+    const [isChecked, setIsChecked] = useAtom(isSliderAtom);
     const sliderCheck = () =>{
         setIsChecked(!isChecked);
     }

@@ -4,13 +4,10 @@ import { IsSliderButton } from "@/components/elements/button/IsSliderButton";
 import { themeTime } from "@/features/time/sepHour";
 import { themeColor } from "@/store/themes";
 
-
 const Header = () => {
-
     const time = themeTime();
     const theme = themeColor[time].primaryBg;
-
-    return (
+    return(
         <header>
             <nav  className={`${theme} text-white flex flex-col`}>
                 <div className="flex items-center">
