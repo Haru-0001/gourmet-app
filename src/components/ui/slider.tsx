@@ -22,7 +22,7 @@ const Slider = React.forwardRef<
       onValueChange?.(value)
     }
   }
-  const setTheme = theme || { thumbTheme: "bg-blue-800", ringTheme: "ring-offset-blue-600" }
+  const setTheme = theme || { thumbTheme: "bg-slate-800", ringTheme: "ring-offset-slate-600" }
 
   return (
   <SliderPrimitive.Root

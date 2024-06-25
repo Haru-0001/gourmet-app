@@ -1,11 +1,10 @@
 import { GitButton } from "@/components/elements/button/GitButton";
 import { themeTime } from "@/features/time/sepHour";
 import { themeColor } from "@/store/themes";
-import { ThemeTimeType } from "@/types/ThemeTime";
 
 const Footer = () => {
-    const time = themeTime() as ThemeTimeType;
-    const theme = themeColor[time].primaryBg
+    const time = themeTime();
+    const theme = themeColor[time].primaryBg;
     return (
         <footer>
             <nav  className={`${theme} text-white flex flex-col`}>

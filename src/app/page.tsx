@@ -3,13 +3,12 @@ import { SendMessage } from "@/components/elements/message/SendMessage";
 import { PromptMessage } from "@/components/elements/message/PromptMessage";
 import { RangeSlider } from "@/components/modules/RangeSlider";
 import { themeTime } from "@/features/time/sepHour";
-import { ThemeTimeType } from "@/types/ThemeTime";
 import { themeColor } from "@/store/themes";
 
 
 export default function Home() {
-  const time = themeTime() as ThemeTimeType;
-  const theme = themeColor[time].primaryBg
+  const time = themeTime();
+  const theme = themeColor[time].primaryBg;
 
   return (
     <div className={`h-screen flex flex-col ${theme}`}>

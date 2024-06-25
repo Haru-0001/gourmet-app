@@ -10,11 +10,11 @@ const onValueChange = (value: number[]) => {
     console.log("range", jsCookie.get("range"));
 }
 
-const RangeSlider = (value:{time:string}) => {
-    const time = value.time as ThemeTimeType;
-    const textTheme = themeColor[time].primaryText
-    const thumbTheme = themeColor[time].primaryAction
-    const ringTheme = themeColor[time].ring
+const RangeSlider = (props:{time:ThemeTimeType}) => {
+    const time = props.time;
+    const textTheme = themeColor[time].primaryText;
+    const thumbTheme = themeColor[time].primaryAction;
+    const ringTheme = themeColor[time].ring;
     return (
         <div className="relative mb-6 w-9/12">
             <Slider defaultValue={[2]} min={1} max={5} step={1} onValueChange={onValueChange} theme={{ thumbTheme, ringTheme }} />
