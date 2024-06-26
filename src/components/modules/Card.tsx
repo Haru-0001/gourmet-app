@@ -1,32 +1,34 @@
 'use client'
 import { GetLocalRestaurant } from "@/types/GetLocalRestaurant";
-import {useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { getLocation } from "@/api/location/getLocation";
 import { getRestaurants } from "@/api/restaurants/default/getRestaurants";
 import { RestaurantCard } from "@/types/RestaurantCard";
 import { cardMapper } from "@/features/restaurant/card/cardMapper";
-import jsCookie from "js-cookie";
+import { useAtomValue } from "jotai";
+import { paginationAtom } from "@/store/paginationAtom";
+import { rangeAtom } from "@/store/searchAtom";
 
 // ユーザーの位置情報を取得し、その位置情報を元にレストランのデータを取得する
 const Card = () =>{
     const [cards, setCards] = useState<RestaurantCard[]>([]);
-
+    const pageNum = useAtomValue(paginationAtom);
+    const range = useAtomValue(rangeAtom) as GetLocalRestaurant["range"];
     const getUserRestaurants = async () => {
-        const location = await getLocation()
-        const range = Number(jsCookie.get("range")) as GetLocalRestaurant["range"]
+        const location = await getLocation();
         const params: GetLocalRestaurant = {
-            start: 1,
+            start: pageNum,
             range: range,
             latitude: location.latitude,
             longitude: location.longitude
-        }
-        const response = await getRestaurants(params)
-        const restaurantCards = cardMapper(response)
-        setCards(restaurantCards)
-    }
+        };
+        const response = await getRestaurants(params);
+        const restaurantCards = cardMapper(response);
+        setCards(restaurantCards);
+    };
     //useEffectを使用してgetUserRestaurantsを実行
     useEffect(() => {
-        getUserRestaurants()
+        getUserRestaurants();
     }, [])
 
     return (
