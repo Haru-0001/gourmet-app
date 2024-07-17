@@ -7,7 +7,6 @@ export function middleware(req : NextRequest) {
     const JSTime = new Date().toLocaleString('en-GB', { timeZone: 'JST' , hour: "numeric"});
     const response = NextResponse.next();
     response.cookies.set("JSTime", JSTime);
-    response.cookies.set("range", "2");
     console.log("middlewareURL:", req.nextUrl.href);
     console.log("cookieData", response.cookies.getAll());
     return response;
