@@ -11,7 +11,7 @@ Please obtain a Gourmet Search API key from the following URL.
 
 Enable the API key with the following command.
 
-```echo HOT_PEPPER_API_KEY = [YOUR_API_KEY] > .env```
+```echo HOT_PEPPER_API_KEY = [YOUR_API_KEY] > .env.local```
 
 Start a local server with the following command
 
