@@ -1,10 +1,18 @@
 # 今日のごはんナビ
 
-    Kyono Gohan Navi is a one-touch service that searches for restaurants in the area.
+Kyono Gohan Navi is a one-touch service that searches for restaurants in the area.
+
+## How to start locally
+
+Please obtain a Gourmet Search API key from the following URL.
+```https://webservice.recruit.co.jp/doc/hotpepper/reference.html```
+
+Enable the API key with the following command.  
+```echo HOT_PEPPER_API_KEY = [YOUR_API_KEY] > .env```
 
 ## URL
 
-    Coming Soon
+Coming Soon
 
 ## Usage Technology
 
@@ -25,4 +33,3 @@
 ### Execution environment
 
 - Google Chrome
-
