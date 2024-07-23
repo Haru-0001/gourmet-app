@@ -1,7 +1,7 @@
 # 今日のごはんナビ
 
 Kyono Gohan Navi is a one-touch service that searches for restaurants in the area.  
-This service is powered by <a href="http://webservice.recruit.co.jp/">ホットペッパーグルメ Webサービス</a>.
+This service is powered by [ホットペッパーグルメ Webサービス](http://webservice.recruit.co.jp/).
 
 ## How to start locally
 
