@@ -10,7 +10,7 @@ const nsJpFont = Noto_Sans_JP({
 
 export default function result() {
     return (
-        <div className={`${nsJpFont.className} flex flex-col justify-center mt-12 flex-grow`}>
+        <div className={`${nsJpFont.className} flex flex-col justify-center grow`}>
             <Card />
             <ResultPagination />
         </div>
