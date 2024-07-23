@@ -1,20 +1,21 @@
-import { firstCardValueAtom, lastCardValueAtom} from "@/store/paginationAtom";
+import { firstCardValueAtom, lastCardValueAtom, maxCardAtom} from "@/store/paginationAtom";
 import { useAtomValue } from "jotai";
 
 export const PageSign = () => {
     const firstCardValue = useAtomValue(firstCardValueAtom);
     const lastCardValue = useAtomValue(lastCardValueAtom);
+    const maxCard = useAtomValue(maxCardAtom);
     return (
         firstCardValue == lastCardValue ? (
             <div className="flex justify-center">
                 <p>
-                    表示中のレストラン: No.{lastCardValue}
+                    {lastCardValue} 件のレストランを表示中
                 </p>
             </div>
         ) : (
         <div className="flex justify-center">
             <p>
-                表示中のレストラン: No.{firstCardValue} ～ {lastCardValue}
+                {maxCard} 件中 {firstCardValue} ～ {lastCardValue} 件のレストランを表示中
             </p>
         </div>
         )

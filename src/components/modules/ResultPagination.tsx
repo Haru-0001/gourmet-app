@@ -9,9 +9,10 @@ import {
 } from "@/components/ui/pagination"
 import { PageSign } from "../elements/sign/PageSign"
 import { useAtomValue } from "jotai"
-import { maxPageAtom } from "@/store/paginationAtom"
+import { maxPageAtom, paginationAtom } from "@/store/paginationAtom"
 
 const ResultPagination = () => {
+    const pageValue = useAtomValue(paginationAtom)
     const maxPage = useAtomValue(maxPageAtom)
     return(
         <>
@@ -23,13 +24,14 @@ const ResultPagination = () => {
                             <PaginationPrevious href="#" />
                         </PaginationItem>
                         <PaginationItem>
-                            <PaginationLink href="#">1</PaginationLink>
+                            <PaginationLink href="#"></PaginationLink>
                         </PaginationItem>
-                        {maxPage > 2 && (
                         <PaginationItem>
-                            <PaginationLink href="#">2</PaginationLink>
+                            <PaginationLink href="#"></PaginationLink>
                         </PaginationItem>
-                        )}
+                        <PaginationItem>
+                            <PaginationLink href="#">{pageValue}</PaginationLink>
+                        </PaginationItem>
                         <PaginationItem>
                             <PaginationEllipsis />
                         </PaginationItem>
