@@ -5,15 +5,17 @@ import { getLocation } from "@/api/location/getLocation";
 import { getRestaurants } from "@/api/restaurants/default/getRestaurants";
 import { RestaurantCard } from "@/types/RestaurantCard";
 import { cardMapper } from "@/features/restaurant/card/cardMapper";
-import { useAtomValue } from "jotai";
-import { paginationAtom } from "@/store/paginationAtom";
+import { useAtomValue, useSetAtom } from "jotai";
+import { cardLengthAtom, firstCardValueAtom, maxCardAtom, } from "@/store/paginationAtom";
 import { rangeAtom } from "@/store/searchAtom";
 
 // ユーザーの位置情報を取得し、その位置情報を元にレストランのデータを取得する
 const Card = () =>{
     const [cards, setCards] = useState<RestaurantCard[]>([]);
-    const pageNum = useAtomValue(paginationAtom);
+    const pageNum = useAtomValue(firstCardValueAtom);
     const range = useAtomValue(rangeAtom) as GetLocalRestaurant["range"];
+    const setMaxPage = useSetAtom(maxCardAtom);
+    const setCardLength = useSetAtom(cardLengthAtom);
     const getUserRestaurants = async () => {
         const location = await getLocation();
         const params: GetLocalRestaurant = {
@@ -25,6 +27,8 @@ const Card = () =>{
         const response = await getRestaurants(params);
         const restaurantCards = cardMapper(response);
         setCards(restaurantCards);
+        setCardLength(response.results.shop.length);
+        setMaxPage(response.results.results_available);
     };
     //useEffectを使用してgetUserRestaurantsを実行
     useEffect(() => {
@@ -33,7 +37,7 @@ const Card = () =>{
 
     return (
     // レストランのデータをカードに表示
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center my-12">
     {cards?.length > 0 ? (
         cards?.map((restaurant: RestaurantCard) => (
             <div key={restaurant.key} className="w-9/12 my-4 flex flex-col bg-white border border-gray-200 rounded-lg shadow-xl hover:bg-gray-100 md:flex-row md:max-w-2xl md:h-60">
