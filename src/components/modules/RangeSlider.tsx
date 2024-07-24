@@ -5,6 +5,7 @@ import { ThemeTimeType } from "@/types/ThemeTime";
 import { useAtom, useAtomValue, useSetAtom } from 'jotai';
 import { isSliderAtom, rangeAtom } from '@/store/searchAtom';
 import { useEffect } from "react";
+import { GetLocalRestaurant } from "@/types/GetLocalRestaurant";
 
 const RangeSlider = (props:{time:ThemeTimeType}) => {
     const time = props.time;
@@ -18,7 +19,7 @@ const RangeSlider = (props:{time:ThemeTimeType}) => {
     const defaultRange = useAtomValue(rangeAtom);
     const setRange = useSetAtom(rangeAtom);
     const onValueChange = (value:number[]) => {
-        setRange(value[0]);
+        setRange(value[0] as GetLocalRestaurant["range"]);
     };
     //Atomの初期化
     useEffect(() => {
