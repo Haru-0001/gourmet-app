@@ -24,71 +24,67 @@ const ResultPagination = () => {
 };
     return(
         <>
-        {
-            maxPage >= 2 &&  (
-                <Pagination>
-                    <PaginationContent>
-                        <PaginationItem>
-                            {pageValue > 1 ? (
-                            <PaginationPrevious href="#" onClick={() => handlePageChange(pageValue-1)} />
-                            ) : (
-                            <PaginationPrevious />
-                            )}
-                        </PaginationItem>
-                        {pageValue > 2 ? (
+        {maxPage >= 2 &&  (
+            <Pagination>
+                <PaginationContent>
+                    <PaginationItem>
+                        {pageValue > 1 ? (
+                        <PaginationPrevious href="#" onClick={() => handlePageChange(pageValue-1)} />
+                        ) : (
+                        <PaginationPrevious />
+                        )}
+                    </PaginationItem>
+                    {pageValue > 2 ? (
+                    <><PaginationItem>
+                            <PaginationLink href="#" onClick={() => handlePageChange(1)}>{1}</PaginationLink>
+                    </PaginationItem>
+                    <PaginationItem>
+                            <PaginationEllipsis />
+                    </PaginationItem></>
+                    ):(
+                    <><PaginationItem><PaginationLink /></PaginationItem>
+                    <PaginationItem><PaginationLink /></PaginationItem></>
+                    )
+                    }
+                    <PaginationItem>
+                        {pageValue > 1 ? (
+                            <PaginationLink href="#" onClick={() => handlePageChange(pageValue-1)}>{pageValue-1} </PaginationLink>
+                        ) : (
+                            <PaginationLink />
+                        )}
+                    </PaginationItem>
+                    <PaginationItem>
+                        <PaginationLink href="#" className={`text-white ${theme}`}>{pageValue}</PaginationLink>
+                    </PaginationItem>
+                    <PaginationItem>
+                        {pageDiff > 0 ? (
+                            <PaginationLink href="#" onClick={() => handlePageChange(pageValue+1)}>{pageValue+1} </PaginationLink>
+                        ) : (
+                            <PaginationLink />
+                        )}
+                    </PaginationItem>
+                    {pageDiff > 1 ? (
                         <><PaginationItem>
-                                <PaginationLink href="#" onClick={() => handlePageChange(1)}>{1}</PaginationLink>
+                            <PaginationEllipsis />
                         </PaginationItem>
                         <PaginationItem>
-                                <PaginationEllipsis />
+                            <PaginationLink href="#" onClick={() => handlePageChange(maxPage)}>{maxPage}</PaginationLink>
                         </PaginationItem></>
-                        ):(
+                    ):(
                         <><PaginationItem><PaginationLink /></PaginationItem>
                         <PaginationItem><PaginationLink /></PaginationItem></>
-                        )
-                        }
-                        <PaginationItem>
-                            {pageValue > 1 ? (
-                                <PaginationLink href="#" onClick={() => handlePageChange(pageValue-1)}>{pageValue-1} </PaginationLink>
-                            ) : (
-                                <PaginationLink />
-                            )}
-                        </PaginationItem>
-                        <PaginationItem>
-                            <PaginationLink href="#" className={`text-white ${theme}`}>{pageValue}</PaginationLink>
-                        </PaginationItem>
-                        <PaginationItem>
-                            {pageDiff > 0 ? (
-                                <PaginationLink href="#" onClick={() => handlePageChange(pageValue+1)}>{pageValue+1} </PaginationLink>
-                            ) : (
-                                <PaginationLink />
-                            )}
-                        </PaginationItem>
-                        {pageDiff > 1 ? (
-                            <><PaginationItem>
-                                <PaginationEllipsis />
-                            </PaginationItem>
-                            <PaginationItem>
-                                <PaginationLink href="#" onClick={() => handlePageChange(maxPage)}>{maxPage}</PaginationLink>
-                            </PaginationItem></>
-                        ):(
-                            <><PaginationItem><PaginationLink /></PaginationItem>
-                            <PaginationItem><PaginationLink /></PaginationItem></>
+                    )}
+                    <PaginationItem>
+                        {pageDiff > 0 ? (
+                        <PaginationNext href="#" onClick={() => handlePageChange(pageValue+1)}/>
+                        ) : (
+                        <PaginationNext />
                         )}
-                        <PaginationItem>
-                            {pageDiff > 0 ? (
-                            <PaginationNext href="#" onClick={() => handlePageChange(pageValue+1)}/>
-                            ) : (
-                            <PaginationNext />
-                            )}
-                        </PaginationItem>
-                    </PaginationContent>
-                </Pagination>
-            )
-        }
-        {maxPage !== 0 &&
-        <PageSign />
-        }
+                    </PaginationItem>
+                </PaginationContent>
+            </Pagination>
+        )}
+        {maxPage !== 0 &&<PageSign />}
         </>
     );
 }
