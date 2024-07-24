@@ -4,6 +4,6 @@ export const serverTime = () =>{
         hour: "numeric",
     });
     const JSTimeNum = isNaN(Number(JSTime))? 12 : Number(JSTime);
-    console.log("JSTime:", JSTime);
+    console.log("JSTime:", JSTimeNum);
     return JSTimeNum
 }
