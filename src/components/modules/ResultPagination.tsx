@@ -8,12 +8,20 @@ import {
     PaginationPrevious,
 } from "@/components/ui/pagination"
 import { PageSign } from "../elements/sign/PageSign"
-import { useAtomValue } from "jotai"
+import { useAtom, useAtomValue } from "jotai"
 import { maxPageAtom, paginationAtom } from "@/store/paginationAtom"
+import { themeTime } from "@/features/time/sepHour"
+import { themeColor } from "@/store/themes"
 
 const ResultPagination = () => {
-    const pageValue = useAtomValue(paginationAtom)
+    const time = themeTime();
+    const theme = themeColor[time].primaryBg;
+    const [pageValue , setPageValue] = useAtom(paginationAtom)
     const maxPage = useAtomValue(maxPageAtom)
+    const pageDiff = maxPage - pageValue
+    const handlePageChange = (page : number) => {
+        setPageValue(page);
+};
     return(
         <>
         {
@@ -21,25 +29,58 @@ const ResultPagination = () => {
                 <Pagination>
                     <PaginationContent>
                         <PaginationItem>
-                            <PaginationPrevious href="#" />
+                            {pageValue > 1 ? (
+                            <PaginationPrevious href="#" onClick={() => handlePageChange(pageValue-1)} />
+                            ) : (
+                            <PaginationPrevious />
+                            )}
+                        </PaginationItem>
+                        {pageValue > 2 ? (
+                        <><PaginationItem>
+                                <PaginationLink href="#" onClick={() => handlePageChange(1)}>{1}</PaginationLink>
                         </PaginationItem>
                         <PaginationItem>
-                            <PaginationLink href="#"></PaginationLink>
+                                <PaginationEllipsis />
+                        </PaginationItem></>
+                        ):(
+                        <><PaginationItem><PaginationLink /></PaginationItem>
+                        <PaginationItem><PaginationLink /></PaginationItem></>
+                        )
+                        }
+                        <PaginationItem>
+                            {pageValue > 1 ? (
+                                <PaginationLink href="#" onClick={() => handlePageChange(pageValue-1)}>{pageValue-1} </PaginationLink>
+                            ) : (
+                                <PaginationLink />
+                            )}
                         </PaginationItem>
                         <PaginationItem>
-                            <PaginationLink href="#"></PaginationLink>
+                            <PaginationLink href="#" className={`text-white ${theme}`}>{pageValue}</PaginationLink>
                         </PaginationItem>
                         <PaginationItem>
-                            <PaginationLink href="#">{pageValue}</PaginationLink>
+                            {pageDiff > 0 ? (
+                                <PaginationLink href="#" onClick={() => handlePageChange(pageValue+1)}>{pageValue+1} </PaginationLink>
+                            ) : (
+                                <PaginationLink />
+                            )}
                         </PaginationItem>
+                        {pageDiff > 1 ? (
+                            <><PaginationItem>
+                                <PaginationEllipsis />
+                            </PaginationItem>
+                            <PaginationItem>
+                                <PaginationLink href="#" onClick={() => handlePageChange(maxPage)}>{maxPage}</PaginationLink>
+                            </PaginationItem></>
+                        ):(
+                            <><PaginationItem><PaginationLink /></PaginationItem>
+                            <PaginationItem><PaginationLink /></PaginationItem></>
+                        )}
                         <PaginationItem>
-                            <PaginationEllipsis />
-                        </PaginationItem>
-                        <PaginationItem>
-                            <PaginationLink href="#">{maxPage}</PaginationLink>
-                        </PaginationItem>
-                        <PaginationItem>
-                            <PaginationNext href="#" />
+                            {pageDiff > 0 ? (
+                            <PaginationNext href="#" onClick={() => handlePageChange(pageValue+1)}/>
+                            ) : (
+                            <PaginationNext />
+                            )}
                         </PaginationItem>
                     </PaginationContent>
                 </Pagination>
