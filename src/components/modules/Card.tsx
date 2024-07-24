@@ -13,7 +13,7 @@ import { rangeAtom } from "@/store/searchAtom";
 const Card = () =>{
     const [cards, setCards] = useState<RestaurantCard[]>([]);
     const pageNum = useAtomValue(firstCardValueAtom);
-    const range = useAtomValue(rangeAtom) as GetLocalRestaurant["range"];
+    const range = useAtomValue(rangeAtom);
     const setMaxPage = useSetAtom(maxCardAtom);
     const setCardLength = useSetAtom(cardLengthAtom);
     const getUserRestaurants = async () => {
