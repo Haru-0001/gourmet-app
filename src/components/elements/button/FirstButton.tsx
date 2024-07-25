@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 // 最初に表示するボタン
-const FirstButton= (props: {pathName: string}) => {
+export const FirstButton= (props: {pathName: string}) => {
     const pathName = props.pathName;
     return(
         <Link href={pathName}>
@@ -10,8 +10,7 @@ const FirstButton= (props: {pathName: string}) => {
                 <path d="M 100 500 Q 100 375 200 350 Q 200 200 350 200 Q 500 50 650 200 Q 800 200 800 350 Q 900 375 900 500 L 950 500 Q 950 850 650 900 L 650 950 350 950 350 900 Q 50 850 50 500 Z" stroke="#fff" strokeWidth="75" fill="none" />
             </svg>
             <div className="animate-ping rounded-full absolute size-48 shadow-btn" ></div>
-        </button>
+            </button>
         </Link>
     )
 }
-export {FirstButton};
