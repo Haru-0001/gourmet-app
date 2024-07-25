@@ -5,7 +5,7 @@ import { getLocation } from "@/api/location/getLocation";
 import { getRestaurants } from "@/api/restaurants/default/getRestaurants";
 import { RestaurantCard } from "@/types/RestaurantCard";
 import { cardMapper } from "@/features/restaurant/card/cardMapper";
-import { useAtom, useAtomValue, useSetAtom } from "jotai";
+import { useAtomValue, useSetAtom } from "jotai";
 import { cardLengthAtom, firstCardValueAtom, maxCardAtom, } from "@/store/paginationAtom";
 import { rangeAtom } from "@/store/searchAtom";
 
