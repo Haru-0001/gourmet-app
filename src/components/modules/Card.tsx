@@ -5,21 +5,23 @@ import { getLocation } from "@/api/location/getLocation";
 import { getRestaurants } from "@/api/restaurants/default/getRestaurants";
 import { RestaurantCard } from "@/types/RestaurantCard";
 import { cardMapper } from "@/features/restaurant/card/cardMapper";
-import { useAtomValue, useSetAtom } from "jotai";
+import { useAtom, useAtomValue, useSetAtom } from "jotai";
 import { cardLengthAtom, firstCardValueAtom, maxCardAtom, } from "@/store/paginationAtom";
 import { rangeAtom } from "@/store/searchAtom";
 
 // ユーザーの位置情報を取得し、その位置情報を元にレストランのデータを取得する
 const Card = () =>{
     const [cards, setCards] = useState<RestaurantCard[]>([]);
-    const pageNum = useAtomValue(firstCardValueAtom);
+
+    const cardNum = useAtomValue(firstCardValueAtom);
     const range = useAtomValue(rangeAtom);
     const setMaxPage = useSetAtom(maxCardAtom);
     const setCardLength = useSetAtom(cardLengthAtom);
+
     const getUserRestaurants = async () => {
         const location = await getLocation();
         const params: GetLocalRestaurant = {
-            start: pageNum,
+            start: cardNum,
             range: range,
             latitude: location.latitude,
             longitude: location.longitude
@@ -30,10 +32,11 @@ const Card = () =>{
         setCardLength(response.results.shop.length);
         setMaxPage(response.results.results_available);
     };
+
     //useEffectを使用してgetUserRestaurantsを実行
     useEffect(() => {
         getUserRestaurants();
-    }, [])
+    }, [cardNum])
 
     return (
     // レストランのデータをカードに表示

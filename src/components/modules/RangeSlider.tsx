@@ -24,7 +24,6 @@ const RangeSlider = (props:{time:ThemeTimeType}) => {
     //Atomの初期化
     useEffect(() => {
         setIsChecked(true)
-        setRange(2)
     },[])
 
     return (
