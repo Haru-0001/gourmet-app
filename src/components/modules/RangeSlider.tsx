@@ -5,7 +5,6 @@ import { ThemeTimeType } from "@/types/ThemeTime";
 import { useAtom } from 'jotai';
 import { isSliderAtom, rangeAtom } from '@/store/searchAtom';
 import { useEffect } from "react";
-import { GetLocalRestaurant } from "@/types/GetLocalRestaurant";
 
 const RangeSlider = (props:{time:ThemeTimeType}) => {
     const time = props.time;
@@ -14,12 +13,11 @@ const RangeSlider = (props:{time:ThemeTimeType}) => {
     const ringTheme = themeColor[time].ring;
 
     const [isChecked ,setIsChecked] = useAtom(isSliderAtom);
-    const opacity = isChecked ? "opacity-100" : "opacity-50"; //スライダーのON/OFFをisSliderButtonで切り替えるための設定
-
+    const opacity = isChecked ? "opacity-100" : "opacity-50";
     const [range,setRange] = useAtom(rangeAtom);
 
     const onValueChange = (value:number[]) => {
-        setRange(value[0] as GetLocalRestaurant["range"]);
+        setRange(value[0]);
     };
 
     useEffect(() => {

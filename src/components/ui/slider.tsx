@@ -13,8 +13,8 @@ type ExtendedSliderProps = React.ComponentPropsWithoutRef<typeof SliderPrimitive
 const Slider = React.forwardRef<
   React.ElementRef<typeof SliderPrimitive.Root>,
   ExtendedSliderProps
->(({ className, onValueChange, theme, ...props }, ref) => {
-  const [value, setValue] = React.useState([2])
+>(({ className, onValueChange, theme, defaultValue, ...props }, ref) => {
+  const [value, setValue] = React.useState(defaultValue);
 
   const handleValueChange = (value: number[]) => {
     setValue(value)
