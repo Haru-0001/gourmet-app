@@ -21,7 +21,6 @@ const ResultPagination = () => {
     const pageDiff = maxPage - pageValue
     const handlePageChange = (page : number) => {
         setPageValue(page);
-        window.scrollTo(0,0);
 };
     return(
         <>
@@ -30,14 +29,14 @@ const ResultPagination = () => {
                 <PaginationContent>
                     <PaginationItem>
                         {pageValue > 1 ? (
-                        <PaginationPrevious href="" onClick={() => handlePageChange(pageValue-1)} />
+                        <PaginationPrevious href="#" onClick={() => handlePageChange(pageValue-1)} />
                         ) : (
                         <PaginationPrevious />
                         )}
                     </PaginationItem>
                     {pageValue > 2 ? (
                     <><PaginationItem>
-                            <PaginationLink href="" onClick={() => handlePageChange(1)}>{1}</PaginationLink>
+                            <PaginationLink href="#" onClick={() => handlePageChange(1)}>{1}</PaginationLink>
                     </PaginationItem>
                     <PaginationItem>
                             <PaginationEllipsis />
@@ -49,7 +48,7 @@ const ResultPagination = () => {
                     }
                     <PaginationItem>
                         {pageValue > 1 ? (
-                            <PaginationLink href="" onClick={() => handlePageChange(pageValue-1)}>{pageValue-1} </PaginationLink>
+                            <PaginationLink href="#" onClick={() => handlePageChange(pageValue-1)}>{pageValue-1} </PaginationLink>
                         ) : (
                             <PaginationLink />
                         )}
@@ -59,7 +58,7 @@ const ResultPagination = () => {
                     </PaginationItem>
                     <PaginationItem>
                         {pageDiff > 0 ? (
-                            <PaginationLink href="" onClick={() => handlePageChange(pageValue+1)}>{pageValue+1} </PaginationLink>
+                            <PaginationLink href="#" onClick={() => handlePageChange(pageValue+1)}>{pageValue+1} </PaginationLink>
                         ) : (
                             <PaginationLink />
                         )}
@@ -69,7 +68,7 @@ const ResultPagination = () => {
                             <PaginationEllipsis />
                         </PaginationItem>
                         <PaginationItem>
-                            <PaginationLink href="" onClick={() => handlePageChange(maxPage)}>{maxPage}</PaginationLink>
+                            <PaginationLink href="#" onClick={() => handlePageChange(maxPage)}>{maxPage}</PaginationLink>
                         </PaginationItem></>
                     ):(
                         <><PaginationItem><PaginationLink /></PaginationItem>
@@ -77,7 +76,7 @@ const ResultPagination = () => {
                     )}
                     <PaginationItem>
                         {pageDiff > 0 ? (
-                        <PaginationNext href="" onClick={() => handlePageChange(pageValue+1)}/>
+                        <PaginationNext href="#" onClick={() => handlePageChange(pageValue+1)}/>
                         ) : (
                         <PaginationNext />
                         )}
