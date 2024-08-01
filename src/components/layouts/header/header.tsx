@@ -3,6 +3,7 @@ import { RangeSlider } from "@/components/modules/RangeSlider";
 import { IsSliderButton } from "@/components/elements/button/IsSliderButton";
 import { themeTime } from "@/features/time/sepHour";
 import { themeColor } from "@/store/themes";
+import { SearchButton } from "@/components/elements/button/SearchButton";
 
 const Header = () => {
     const time = themeTime();
@@ -19,6 +20,9 @@ const Header = () => {
                 <div className="flex justify-center items-center gap-10">
                     <IsSliderButton time={time}/>
                     <RangeSlider time={time}/>
+                </div>
+                <div className="flex justify-center">
+                    <SearchButton time={time} />
                 </div>
             </nav>
         </header>
