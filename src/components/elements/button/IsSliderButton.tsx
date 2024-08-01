@@ -14,11 +14,9 @@ const IsSliderButton = (props:{time:ThemeTimeType}) =>{
     }
 
     return(
-        <div className="relative">
-            <button onClick={()=> sliderCheck()} className="absolute -top-1 flex justify-center  items-center size-6 bg-slate-100 rounded-full transition-transform duration-200 hover:scale-110">
+            <button onClick={()=> sliderCheck()} className="flex justify-center items-center size-6 bg-slate-100 rounded-full transition-transform duration-200 hover:scale-110">
                 {isChecked && <div className={`size-3  rounded-full ${theme}`}></div>}
             </button>
-        </div>
     )
 }
 export {IsSliderButton}

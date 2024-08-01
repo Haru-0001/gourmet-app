@@ -25,7 +25,7 @@ const RangeSlider = (props:{time:ThemeTimeType}) => {
     },[])
 
     return (
-        <div className={`relative mb-6 w-9/12 ${opacity}`}>
+        <div className={`relative my-6 w-9/12 ${opacity}`}>
             <Slider defaultValue={[range]} min={1} max={5} step={1} disabled={!isChecked} onValueChange={onValueChange} theme={{ thumbTheme, ringTheme }} />
             <span className={`text-sm ${ textTheme } absolute start-[-12px] -bottom-6`}>&nbsp;300m</span>
             <span className={`text-sm ${ textTheme } absolute start-1/4 -translate-x-1/2 -bottom-6`}>&emsp;500m</span>
