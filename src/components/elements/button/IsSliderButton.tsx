@@ -1,4 +1,3 @@
-"use client"
 import { isSliderAtom } from '@/store/searchAtom';
 import { themeColor } from '@/store/themes';
 import { ThemeTimeType } from '@/types/ThemeTime';

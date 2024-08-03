@@ -1,4 +1,3 @@
-"use client"
 import { Slider } from "@/components/ui/slider"
 import { themeColor } from "@/store/themes";
 import { ThemeTimeType } from "@/types/ThemeTime";
