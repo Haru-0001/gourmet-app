@@ -15,7 +15,6 @@ export const SearchButton:FC<{
     const setRangeAtom = useSetAtom(rangeAtom);
     const onSetRange = () => {
         setRangeAtom(range);
-        console.log(range)
     }
     return (
         <button onClick={onSetRange} className={` m-2 h-10 w-64 border-4 rounded-lg ${hoverTheme}`}>
