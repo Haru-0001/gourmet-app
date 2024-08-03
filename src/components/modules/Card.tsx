@@ -35,7 +35,7 @@ export const Card = () =>{
 
     useEffect(() => {
         getUserRestaurants();
-    }, [cardNum]);
+    }, [cardNum,range]);
 
     return (
     // レストランのデータをカードに表示

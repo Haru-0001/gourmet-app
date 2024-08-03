@@ -1,4 +1,5 @@
-import React from "react";
+"use client"
+import React, { useState } from "react";
 import { RangeSlider } from "@/components/modules/RangeSlider";
 import { IsSliderButton } from "@/components/elements/button/IsSliderButton";
 import { themeTime } from "@/features/time/sepHour";
@@ -8,6 +9,11 @@ import { SearchButton } from "@/components/elements/button/SearchButton";
 const Header = () => {
     const time = themeTime();
     const theme = themeColor[time].primaryBg;
+    const [ sendRange, setSendRange ] = useState(2);
+
+    const changeRange = (value: number) => {
+        setSendRange(value);
+    }
     return(
         <header>
             <nav  className={`${theme} text-white flex flex-col gap-y-4`}>
@@ -19,10 +25,10 @@ const Header = () => {
                 </div>
                 <div className="flex justify-center items-center gap-10">
                     <IsSliderButton time={time}/>
-                    <RangeSlider time={time}/>
+                    <RangeSlider time={time} changeRange={changeRange}/>
                 </div>
                 <div className="flex justify-center">
-                    <SearchButton time={time} />
+                    <SearchButton time={time} range={sendRange}/>
                 </div>
             </nav>
         </header>
