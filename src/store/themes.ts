@@ -14,7 +14,7 @@
         primary: "slate-50",
         primaryBg: "bg-indigo-800",
         primaryText: "text-indigo-200",
-        primaryHover: "hover:bg-indigo-900",
+        primaryHover: "hover:bg-indigo-950",
         primaryAction: "bg-indigo-950",
         ring: "ring-offset-indigo-700",
     },
