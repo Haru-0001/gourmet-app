@@ -54,7 +54,7 @@ const ResultPagination = () => {
                         )}
                     </PaginationItem>
                     <PaginationItem>
-                        <PaginationLink className={`text-white ${theme}`}>{pageValue}</PaginationLink>
+                        <PaginationLink isActive>{pageValue}</PaginationLink>
                     </PaginationItem>
                     <PaginationItem>
                         {pageDiff > 0 ? (
