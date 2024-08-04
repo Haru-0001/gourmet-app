@@ -7,12 +7,12 @@ import { FC } from "react";
 // 最初に表示するボタン
 export const FirstButton:FC<{
     time:ThemeTimeType,
-    pathName: string
-    range: number
+    pathName: string,
+    range: number,
 }>= ({
     time,
     pathName,
-    range
+    range,
 }) => {
     const hoverTheme = themeColor[time].primaryHover;
     const onResSearch = useResSearch(range);
