@@ -4,8 +4,7 @@ import { FC} from "react";
 
 export const Modal: FC<{
     children: React.ReactNode,
-    img: string
-}> = ({ children, img }) =>
+}> = ({ children }) =>
 {
     return (
         <Dialog modal>
@@ -14,7 +13,6 @@ export const Modal: FC<{
             </DialogTrigger>
                 <DialogContent>
                 <DialogClose />
-                <img src={img}></img>
                 </DialogContent>
         </Dialog>
     )

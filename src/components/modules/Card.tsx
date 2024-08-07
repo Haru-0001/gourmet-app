@@ -48,7 +48,7 @@ export const Card = () =>{
             <h2 className="p-4 text-xl">現在地から{rangeNum}m以内のレストランを表示中</h2>
         )}
         {cards.map((restaurant: RestaurantCard) => (
-            <Modal img={restaurant.photo}>
+            <Modal>
             <div key={restaurant.key} className="w-9/12 my-4 flex flex-col bg-white border border-gray-200 rounded-lg shadow-xl hover:bg-gray-100 md:flex-row md:max-w-2xl md:h-60">
             <img className="object-cover w-full rounded-t-lg h-56 md:h-full md:w-48 md:rounded-none md:rounded-s-lg md:aspect-square" src={restaurant.photo}/>
                 <div className="flex flex-col justify-between h-full p-4 space-y-2">
